@@ -1,0 +1,3272 @@
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@600&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+html, body{
+    background-color: #160e31;
+    color: #fff;
+}
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+}
+hr {
+    margin: .5em 0;
+    border-bottom: 2px solid rgba(109, 4, 221, 1);
+    border-top: unset;
+    opacity: unset;
+}
+img {width: 100%;}
+.iconBtn{
+    border: none;
+    background: none;
+    color: #fff;
+}
+/*--- container ---*/
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1100px;
+}
+/*--- header ---*/
+header{
+    height: 72px;
+    background-color: #2c185b;
+    display: flex;
+    align-items: center;
+}
+.header-logo{
+    display: grid;
+    align-items: center;
+}
+header .iconBtn{
+    border: none;
+    background: none;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    margin-left: 10px;
+}
+.msg-amoint{
+    background: rgba(255, 24, 24, 1);
+    border-radius: 10px;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    font-size: 14px;
+    line-height: 14px;
+    height: 20px;
+    min-width: 20px;
+    width: auto;
+    padding: 0 3px;
+    display: grid;
+    align-items: center;
+}
+/*--- Marquee ---*/
+.Marquee {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    height: 47px;
+    background-color: #2c185b;
+}
+.Marquee .container {
+    display: flex;
+    align-items: center;
+    height: 47px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+.Marquee-icon{
+    width: 28px;
+    height: auto;
+}
+.Broadcast {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding-left: 3em;
+    list-style: none;
+}
+.Broadcast li {
+    height: 47px;
+    line-height: 47px;
+}
+/*--- MemberBox ---*/
+.MemberBox {
+    margin: 20px 0;
+}
+.MemberBox .container{
+    background: linear-gradient(139.21deg, #A421E5 -18.54%, #6D04DD 122.12%);
+    border-radius: 20px;
+    padding: 20px;
+}
+.MemberDetail {
+    display: flex;
+    align-items: center;
+    gap: 10px;   /* 設定橫向間距 */
+}
+.profilepicture{
+    align-items: center;
+    height: 50px;
+    width: auto;
+    border-radius: 20px;
+    border: 2.5px solid #fff;
+}
+.MemberVIP{
+    align-items: center;
+    font-size: 15px;
+    flex-direction: column;
+}
+.MemberName {
+    font-size: 25px;
+    line-height: 25px;
+}
+.MemberBal{
+    font-size: 15px;
+    line-height: 15px;
+}
+.MemberAction{
+    display: grid;
+    align-items: center;
+}
+.MemberAction-icon{
+    width: 38px;
+    height: auto;
+    max-height: 38px;
+}
+@media (max-width: 720px){
+    .MemberBox{margin: 10px;}
+    .MemberAction-icon{width: 30px;max-height: 30px;}
+}
+@media (max-width: 540px){
+    .MemberBox .container{padding: 10px;}
+    .MemberDetail {gap: 5px;}
+    .MemberVIP{font-size: 12px;}
+    .MemberName {font-size: 20px;line-height: 20px;}
+    .MemberBal{font-size: 12px;line-height: 12px;}
+    .MemberAction{font-size: 12px;}
+}
+/*--- MenuBox ---*/
+@media (min-width: 721px) {
+    .MenuBox-icon{
+        width: 48px;
+        height: auto;
+        max-height: 48px;
+    }
+    .MenuBox .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        padding: 0px;
+    }
+    .MenuBox .btn {
+        width: 124px;
+        height: 124px;
+        font-size: 24px;
+        flex: 1 1 auto;
+        max-width: calc(100% / 8 - 10px);
+    }
+}
+@media (max-width: 960px) {
+    .MenuBox .container {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+@media (max-width: 960px) {
+    .MenuBox-icon{width: 40px;max-height: 40px;}
+    .MenuBox .btn{
+        font-size: 20px;
+        display: inline-block;
+    }
+}
+@media (max-width: 720px) {
+    .MenuBox-icon{width: 30px;max-height: 30px;}
+    .MenuBox .btn{
+        font-size: 14px;
+        width: 94px;
+        height: 94px;
+    }
+}
+@media (max-width: 540px){
+    .MenuBox-icon{width: 24px;max-height: 24px;}
+    .MenuBox .btn{
+        font-size: 12px;
+        width: 64px;
+        height: 64px;
+    }
+}
+/*--- Game Area ImgGroup ---*/
+.GameImgBox{
+    width: 161px;
+    height: 198px;
+    margin: 5px 0px;
+}
+.GameImgBox a{
+    text-decoration: none;
+    color: #fff;
+}
+.GameImgBox .GameImg-main{
+    width: 161px;
+    height: 153px;
+}
+.GameImg-logo{
+    width: 40px;
+    height: auto;
+}
+.GameImgBox .row{
+    padding: 0 15px;
+}
+.GameImgBox .row>*{
+    padding: 0;
+}
+.GameImgBox span{
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 720px){
+    .GameImgBox{width: 102px;height: 125px;font-size: 12px;}
+    .GameImgBox .GameImg-main{width: 102px;height: 97px;}
+    .GameImg-logo{width: 25px;}
+}
+.gameBox-img {
+    display: grid;
+    grid-template-rows: repeat(2, auto);   /*兩行*/
+    grid-auto-flow: column;   /*自動沿水平方向擴展*/
+    gap: 20px;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+.gameBox-img::-webkit-scrollbar {
+    display: none;   /*隱藏滾動條 */
+}
+@media (max-width: 720px){
+    .gameBox-img {gap: 10px;}
+}
+.scroll-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+.scroll-btn img{
+    width: 16px;
+    height: 16px;
+}
+/*--- AdvertBox ---*/
+@media (max-width: 720px){
+    .AdvertBox .container img{
+        margin: 5px 0;
+    }
+}
+/*--- HotgameBox ---*/
+.HotgameBox{
+    margin: 20px 0;
+}
+@media (max-width: 720px){
+    .HotgameBox{margin: 10px;}
+}
+.HotgameBox .container{
+    background: rgba(44, 24, 91, 1);
+    border-radius: 15px;
+    padding: 15px;
+}
+.HotgameBox-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+}
+.HotgameBox-icon{
+    width: 31px;
+    height: auto;
+}
+/*--- DagagameBox ---*/
+.DagagameBox{
+    margin: 20px 0;
+}
+@media (max-width: 720px){
+    .DagagameBox{margin: 10px;}
+}
+.DagagameBox .container{
+    background: rgba(44, 24, 91, 1);
+    border-radius: 15px;
+    padding: 15px;
+}
+.DagagameBox-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+}
+.DagagameBox-icon{
+    width: 31px;
+    height: auto;
+}
+/*--- SlotgameBox ---*/
+.SlotgameBox{
+    margin: 20px 0;
+}
+@media (max-width: 720px){
+    .SlotgameBox{margin: 10px;}
+}
+.SlotgameBox .container{
+    background: rgba(44, 24, 91, 1);
+    border-radius: 15px;
+    padding: 15px;
+}
+.SlotgameBox-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+}
+.SlotgameBox-icon{
+    width: 31px;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+/*--- Margin ---*/
+.m-00{margin: 0;}
+.mt-05 {margin-top: 5px;}
+.mt-10 {margin-top: 10px;}
+.mt-15 {margin-top: 15px;}
+.mt-20 {margin-top: 20px;}
+.mt-30 {margin-top: 30px;}
+.mt-40 {margin-top: 40px;}
+.mt-50 {margin-top: 50px;}
+.mb-05 {margin-bottom: 5px;}
+.mb-10 {margin-bottom: 10px;}
+.mb-15 {margin-bottom: 15px;}
+.mb-20 {margin-bottom: 20px;}
+.mb-30 {margin-bottom: 30px;}
+.mb-40 {margin-bottom: 40px;}
+.mb-50 {margin-bottom: 50px;}
+.ml-05 {margin-left: 5px;}
+.ml-10 {margin-left: 10px;}
+.ml-15 {margin-left: 15px;}
+.ml-20 {margin-left: 20px;}
+.ml-30 {margin-left: 30px;}
+.ml-40 {margin-left: 40px;}
+.ml-50 {margin-left: 50px;}
+.mr-05 {margin-right: 5px;}
+.mr-10 {margin-right: 10px;}
+.mr-15 {margin-right: 15px;}
+.mr-20 {margin-right: 20px;}
+.mr-30 {margin-right: 30px;}
+.mr-40 {margin-right: 40px;}
+.mr-50 {margin-right: 50px;}
+.mx-05 {margin-left: 5px;margin-right: 5px;}
+.mx-10 {margin-left: 10px;margin-right: 10px;}
+.mx-15 {margin-left: 15px;margin-right: 15px;}
+.mx-20 {margin-left: 20px;margin-right: 20px;}
+.mx-30 {margin-left: 30px;margin-right: 30px;}
+.mx-40 {margin-left: 40px;margin-right: 40px;}
+.mx-50 {margin-left: 50px;margin-right: 50px;}
+.my-05 {margin-top: 5px;margin-bottom: 5px;}
+.my-10 {margin-top: 10px;margin-bottom: 10px;}
+.my-15 {margin-top: 15px;margin-bottom: 15px;}
+.my-20 {margin-top: 20px;margin-bottom: 20px;}
+.my-30 {margin-top: 30px;margin-bottom: 30px;}
+.my-40 {margin-top: 40px;margin-bottom: 40px;}
+.my-50 {margin-top: 50px;margin-bottom: 50px;}
+/*--- Padding ---*/
+.p-00{padding: 0;}
+.pt-05 {padding-top: 5px!important;}
+.pt-10 {padding-top: 10px!important;}
+.pt-15 {padding-top: 15px!important;}
+.pt-20 {padding-top: 20px!important;}
+.pt-30 {padding-top: 30px!important;}
+.pt-40 {padding-top: 40px!important;}
+.pt-50 {padding-top: 50px!important;}
+.pb-05 {padding-bottom: 5px!important;}
+.pb-10 {padding-bottom: 10px!important;}
+.pb-15 {padding-bottom: 15px!important;}
+.pb-20 {padding-bottom: 20px!important;}
+.pb-30 {padding-bottom: 30px!important;}
+.pb-40 {padding-bottom: 40px!important;}
+.pb-50 {padding-bottom: 50px!important;}
+.pl-05 {padding-left: 5px!important;}
+.pl-10 {padding-left: 10px!important;}
+.pl-15 {padding-left: 15px!important;}
+.pl-20 {padding-left: 20px!important;}
+.pl-30 {padding-left: 30px!important;}
+.pl-40 {padding-left: 40px!important;}
+.pl-50 {padding-left: 50px!important;}
+.pr-05 {padding-right: 5px!important;}
+.pr-10 {padding-right: 10px!important;}
+.pr-15 {padding-right: 15px!important;}
+.pr-20 {padding-right: 20px!important;}
+.pr-30 {padding-right: 30px!important;}
+.pr-40 {padding-right: 40px!important;}
+.pr-50 {padding-right: 50px!important;}
+.px-05 {padding-left: 5px!important;padding-right: 5px!important;}
+.px-10 {padding-left: 10px!important;padding-right: 10px!important;}
+.px-15 {padding-left: 15px!important;padding-right: 15px!important;}
+.px-20 {padding-left: 20px!important;padding-right: 20px!important;}
+.px-30 {padding-left: 30px!important;padding-right: 30px!important;}
+.px-40 {padding-left: 40px!important;padding-right: 40px!important;}
+.px-50 {padding-left: 50px!important;padding-right: 50px!important;}
+.py-05 {padding-top: 5px!important;padding-bottom: 5px!important;}
+.py-10 {padding-top: 10px!important;padding-bottom: 10px!important;}
+.py-15 {padding-top: 15px!important;padding-bottom: 15px!important;}
+.py-20 {padding-top: 20px!important;padding-bottom: 20px!important;}
+.py-30 {padding-top: 30px!important;padding-bottom: 30px!important;}
+.py-40 {padding-top: 40px!important;padding-bottom: 40px!important;}
+.py-50 {padding-top: 50px!important;padding-bottom: 50px!important;}
+/*--- Button ---*/
+.btn{
+    padding: 8px 16px;
+    border-radius: 25px;
+    border: none;
+}
+@media (max-width: 720px){
+    .btn{
+        padding: 4px 8px;
+        border-radius: 16px;
+    }
+}
+.btn-primary{
+    background: linear-gradient(224deg, #FFC700 0.84%, #FF9C00 99.16%);
+}
+.btn-primary-variant{
+    background: none;
+    border: 2px solid #FFC700;
+    color: #FFC700;
+}
+.btn-secondary{
+    background: linear-gradient(139.21deg, #A421E5 -18.54%, #6D04DD 122.12%);
+    color: #fff;
+}
+
+
+
+.btn-primary.active{
+    background-color: #fee34e;
+    border-color: #e4a206;
+    color: #000;
+    text-shadow: unset;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus{
+    background-color: #fee34e;
+    border-color: #e4a206;
+}
+
+.btn-secondary.active{
+    background-color: #e4a206;
+    border-color: #fee34e;
+}
+.btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus{
+    background-color: #e4a206;
+    border-color: #fee34e;
+}
+.btn-danger{
+    background-color: #ad3a4f;
+    border-color: #792837;
+}
+.btn-danger:hover, .btn-danger:active, .btn-danger:focus{
+    background-color: #792837;
+    border-color: #ad3a4f;
+}
+.btn-white{
+    background-color: #fff;
+    border-color: #4c9dec;
+}
+.btn-white:hover{
+    border: 1px solid #2c4461;
+    background-color: #fff;
+    color: #000;
+}
+.btn-white:active, .btn-white:focus{
+    background-color: #fee34e!important;
+    border-color: #e4a206!important;
+}
+.btn-gray{
+    background-color: #999;
+    border-color: #000;
+}
+.btn-gray:hover, .btn-gray:active, .btn-gray:focus{
+    background-color: #666;
+    border-color: #999;
+}
+.btn-bet-money{
+    background-color: #fff;
+    border-color: #4c9dec;
+    padding: 3px 6px;
+}
+.btn-bet-money:hover, .btn-bet-money:active, .btn-bet-money:focus{
+    background-color: #fee34e;
+    border-color: #e4a206;
+}
+.btn-bet-multiple{
+    background-color: #fff;
+    border-color: #4c9dec;
+    padding: 3px 6px;
+}
+.btn-bet-multiple:hover, .btn-bet-multiple:active, .btn-bet-multiple:focus{
+    background-color: #fee34e;
+    border-color: #e4a206;
+}
+.btn-options{
+    color: #666;
+    background-color: #fff;
+    border-color: #4c9dec;
+    position: relative;
+}
+.btn-options:hover, .btn-options:active {
+    border: 1px solid #2c4461;
+    background-color: #fff;
+    color: #2c4461;
+}
+.btn-options-clean{
+    color: #666;
+    background-color: #fff;
+    border-color: #a5001e;
+    position: relative;
+}
+.btn-options-clean:hover{
+    color: #fff;
+    background-color: #d2001e;
+}
+.btn-bet-show{
+    background-color: #fff;
+    border-color: #4c9dec;
+    color: #000;
+    padding: 2px 4px;
+    font-size: 14px;
+}
+.btn-bet-show.active{
+    background-color: #e4a206;
+    border-color: #fee34e;
+    color: #000;
+}
+.btn-bet-show:hover, .btn-bet-show:active, .btn-bet-show:focus{
+    background-color: #e4a206;
+    border-color: #fee34e;
+}
+.btn-disabled-grey {
+    background-color: grey;
+    color: white;
+    border-color: grey;
+}
+/*--- Accordion ---*/
+.accordion-button:not(.collapsed) {
+    background-color: #ddeffd;
+}
+.accordion-button.collapsed{
+    background-color: #cee8fc;
+    border-bottom: 1px solid #212529;
+}
+.accordion-item{
+    background-color: unset;
+    border: 1px solid #ccc;
+}
+/*--- 紅/藍色 ---*/
+.red{
+    color: #fe0060;
+}
+.blue{
+    color: #0992f0;
+}
+/*--- Modal ---*/
+.modal .nav-tabs .nav-link{
+    color: #777;
+    padding: 10px;
+}
+.modal .nav-tabs .nav-link.active{
+    background-color: #0a465a;
+    color: #fff;
+    font-weight: 600;
+}
+.homepage .accordion-button{
+    position: unset;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- MRLive畫面 -----*/
+.Dual .main-content{
+    margin-top: 135px;
+    padding-bottom: 50px;
+}
+/*--- topbar ---*/
+.top-bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+.topbar-set{
+    background-color: #042345;
+    color: #fff;
+    padding: 5px 0;
+    height: 40px;
+}
+.topbar-set .topbar-left{
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+}
+.topbar-set .topbar-right{
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+}
+.topbar-set .topbar-center{
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    text-align: center;
+}
+.topbar-set .member-name{
+    color: #fff;
+    padding: 0px 5px;
+    border-left: solid 2px #fff7;
+    border-bottom: solid 2px #fff7;
+    display: inline-block;
+    width: 8em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+.topbar-set .member-balance{
+    color: #fff;
+    display: inline-block;
+    padding: 0px 5px;
+    border-bottom: solid 2px #fff7;
+    overflow: hidden;
+}
+.rotated::after {
+    transform: rotate(180deg);
+}
+.topbar-set .btn-primary{
+    height: 30px;
+}
+.member-currency{
+    display: inline-block;
+    pointer-events: none;
+}
+.currency-btn{
+    display: inline-block;
+    border: none;
+    background: none;
+}
+.currency-btn:hover, .currency-btn:active, .currency-btn:focus {
+    color: #4c9dec;
+}
+.hashtag{
+    display: inline-block;
+    color: #fff;
+    background-color: #007700;
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: 3px outset #005500;
+}
+.live-flim{
+    display: inline-block;
+    color: #fff;
+    background-color: #fe0060;
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: 3px outset #f33;
+}
+.dropdown-menu{
+    min-width: auto;
+    padding: 0;
+    z-index: 100;
+}
+.dropdown-menu .dropdown-item{
+    border-bottom: 1px solid #0002;
+    cursor: pointer;
+}
+.dropdown-item:active{
+    color: #212529;
+    background: none;
+}
+.back-bet{
+    font-size: large;
+    color: #fff;
+    border: none;
+}
+.back-bet:hover{
+    color: #fee34e;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- 側邊欄-遊戲種類 -----*/
+.offcanvas-gametype{
+    width: 50%!important;
+}
+.offcanvas-gametype .offcanvas-body{
+    padding: 0;
+    padding-bottom: 200px;
+}
+.btn-offcanvas-gametype{
+    width: 100%;
+    border-radius: 0;
+    height: 40px;
+    padding-left: 15px;
+    position: relative;
+    border: 1px #ddd solid;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.2); /* 向上方向的陰影 */
+}
+.btn-offcanvas-gametype:hover, .btn-offcanvas-gametype:active{
+    background-color: #cfe2ff;
+}
+.btn-offcanvas-gametype i{
+    position: absolute;
+    right: 15px;
+}
+.offcanvas-gametype .gametype-table{
+    background-color: #f5f9ff;
+    border-radius: 0;
+    border: none;
+    height: 40px;
+    display: block;
+    align-content: center;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    cursor: default;
+}
+.offcanvas-gametype .collapse {
+    border: 1px #ddd solid;
+    border-top: none;
+}
+.btn-backLobby{
+    color: #4c9dec;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- topbar 遊戲資訊 ---*/
+.topbar-game-info{
+    height: 45px;
+}
+.topbar-game-info .topbar-left{
+    display: inline-block;
+    position: relative;
+    left: 5px;
+    height: 100%;
+}
+.topbar-game-info .topbar-right{
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    margin: 5px;
+}
+.game-name-img{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 30px;
+}
+.game-name-text{
+    position: absolute;
+    top: 0;
+    left: 100px;
+    line-height: 20px;
+    min-width: 100px;
+}
+.game-name-hashtext{
+    position: relative;
+    top: 0;
+    left: 160px;
+    line-height: 20px;
+}
+.btn-gameType{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    color: #fff;
+}
+.btn-gameType i{
+    font-size: 24px;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- topbar 開獎結果 -----*/
+.topbar-game{
+    background-color: #1d273a;
+    color: #fff;
+}
+.topbar-game .game-name, .topbar-game .game-period,
+.topbar-game .pre-game-period, .topbar-game .pre-game-number{
+    display: inline-block;
+    align-self: center;
+}
+.topbar-game .game-name{
+    font-size: 20px;
+}
+.topbar-game .pre-game{
+    background-color: #fff7;
+    border-radius: 5px;
+    margin: 0 5px;
+    min-height: 45px;
+}
+.topbar-game .collapse {
+    overflow-y: auto;
+}
+.topbar-game .collapsing {
+    max-height: 300px!important;
+}
+.topbar-game .collapse.show {
+    max-height: 300px!important;
+}
+.topbar-game .collapse .pre-game{
+    border-radius: 0;
+    background-color: #fff6;
+}
+.topbar-game .collapsing .pre-game {
+    border-radius: 0;
+    background-color: #fff6;
+}
+.countdown .time{
+    padding: 5px;
+    border-radius: 5px;
+    text-shadow: 0 0 3px #000;
+    background-color: #4c9dec55;
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-family: var(--bs-body-font-family);
+}
+.pre-game-number .one, .pre-game-number .two,
+.pre-game-number .three, .pre-game-number .four,
+.pre-game-number .five, .pre-game-number .six,
+.pre-game-number .seven, .pre-game-number .eight,
+.pre-game-number .nine, .pre-game-number .ten
+{
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 15px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    align-content: center;
+    background-color: #fff;
+    color: #000;
+}
+.pre-game-number .one{border: #ebcc2a 2px solid;}
+.pre-game-number .two{border: #3c99ef 2px solid;}
+.pre-game-number .three{border: #333 2px solid;}
+.pre-game-number .four{border: #ff7000 2px solid;}
+.pre-game-number .five{border: #64e6ff 2px solid;}
+.pre-game-number .six{border: #620dff 2px solid;}
+.pre-game-number .seven{border: #ccc 2px solid;}
+.pre-game-number .eight{border: #ff0d0d 2px solid;}
+.pre-game-number .nine{border: #6f0100 2px solid;}
+.pre-game-number .ten{border: #39ba00 2px solid;}
+.show-pre{
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 0;
+}
+.pre-game-number img{
+    width: 30px;
+    height: 30px;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- 玩法說明 ---*/
+.btn-howtoplay{
+    background: none;
+    font-size: 12px;
+}
+.Dual .btn-howtoplay{
+    color: #fff;
+}
+.offcanvas-howtoplay{
+    height: 80%!important;
+}
+.howplay-btn-gamename{
+    width: 100%;
+    border-top: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+    padding: 10px 0;
+}
+.howplay-btn-gamename:hover{
+    border-top: solid 1px #ddd;
+    border-bottom: solid 1px #efefef;
+}
+.howplay-collapse-box{
+    border-bottom: solid 1px #ddd;
+}
+.howplay-btn-type{
+    background: linear-gradient(-5deg, #dbebfb, #f6fafe);
+    width: 100%;
+    padding: 3px;
+    color: #000;
+}
+.howplay-btn-type.active{
+    background: none;
+    background-color: #4c9dec;
+    text-shadow: 0 0 3px #000;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- 彈跳-取消原因 ---*/
+.popup-remind{
+    position: absolute;
+    background-color: #f00;
+    color: #fee34e;
+    text-align: center;
+}
+.popup-remind-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background:none;
+    border: none;
+    color: #fff;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- MRLive下注區 ---*/
+.bet-area{
+    background-color: #042345;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+}
+.now-period{
+    width: 100%;
+    background-color: #fee34e;
+    color: #fe0060;
+}
+.bet-area .bet-total{
+    color: #000;
+    text-shadow: none;
+}
+.input-manual{
+    width: 4em;
+    border: solid 1px #4c9dec;
+}
+.input-manual::-webkit-outer-spin-button,
+.input-manual::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.btn-bet-amount{
+    background-color: #fff;
+    border-color: #4c9dec;
+    width: auto;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.7),
+        inset 0px 0px 6px rgba(25,109,179,1),
+        inset 0px 0px 2px rgba(255,255,255,1),
+        inset -2px -2px 2px rgba(0,0,0,1);
+}
+.btn-bet-amount.edit-amount{
+    width: auto!important;
+    min-width: unset;
+    box-shadow: none;
+}
+.btn-bet-amount:hover, .btn-bet-amount:active, .btn-bet-amount:focus{
+    color: #000;
+    background-color: #4c9dec;
+}
+.btn-bet-reset{
+    min-width: 25px;
+    background-color: #fff;
+    border-color: #a5001e;
+    width: auto;
+    box-shadow: 0px 0px 2px rgba(0,0,0,0.7),
+        inset 0px 0px 6px rgba(165,0,30,1),
+        inset 0px 0px 2px rgba(255,255,255,1),
+        inset -2px -2px 2px rgba(0,0,0,1);
+}
+.btn-bet-reset:hover, .btn-bet-reset:active, .btn-bet-reset:focus{
+    color: #000;
+    background-color: #d2001e;
+}
+.bet-action .bet-action-btn{
+    height: 54px;
+    width: auto;
+    padding: 3px;
+    position: relative;
+    word-wrap: break-word;
+    align-content: center;
+}
+.bet-action-btn span i{
+    font-size: 25px;
+    padding-top: 5px;
+}
+.selected-point{
+    position: absolute;
+    right: -5px;
+    top: -8px;
+    color: #fff;
+    background-color: #f56a63;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 50%;
+    line-height: 12px;
+    width: 20px;
+    height: 20px;
+}
+.bet-amount{
+    display: inline-block;
+    margin-top: 10px;
+}
+.bet-action{
+    display: inline-block;
+    margin-top: 10px;
+}
+/*--------------------------------------------------------------------------------*/
+.bet-tricks{
+    margin-bottom: 130px;
+}
+.bet-tricks .tricks-tab-list{
+    width: 20%;
+}
+.bet-tricks .tricks-tab-content{
+    width: 80%;
+    padding: 5px;
+    padding-top: 0;
+}
+.tricks-options{
+    color: #000;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 1px;
+    padding: 6px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    word-break: break-all;
+}
+.tricks-options.active{
+    background-color: #fee34e;
+    font-weight: 600;
+    border-bottom: 5px solid #e4a206;
+}
+.options-log-red{
+    position: absolute;
+    right: -1px;
+    top: -5px;
+    color: #fff;
+    background-color: #fe0060;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 5px;
+    line-height: 12px;
+}
+.options-log-blue{
+    position: absolute;
+    left: -1px;
+    top: -5px;
+    color: #fff;
+    background-color: #0992f0;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 5px;
+    line-height: 12px;
+}
+.options-log-white{
+    position: absolute;
+    right: -1px;
+    top: -5px;
+    color: #0992f0;
+    background-color: #fff;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 5px;
+    line-height: 12px;
+    border: 1px solid #0992f0;
+}
+.options-cue{
+    color: #f00;
+    font-size: 12px;
+    text-align: left;
+}
+/*--- 快捷 ---*/
+.quick-ranking .btn-options, .quick-bet .btn-options{
+    width: 22%;
+    margin: 2px;
+}
+.quick-bet .bet-price{
+    font-size: 12px;
+    color: #aaa;
+}
+/*--- 雙面 ---*/
+.double-bet .btn-options{
+    width: 22%;
+    font-size: 14px;
+    margin: 2px;
+    position: relative;
+}
+.double-bet .bet-price{
+    font-size: 12px;
+    color: #aaa;
+    line-height: 12px;
+}
+/*--- 選號 ---*/
+.number-bet .btn-options{
+    width: 22%;
+    font-size: 14px;
+    margin: 2px;
+}
+.number-bet .bet-price{
+    font-size: 12px;
+    color: #aaa;
+}
+/*--- 和值 ---*/
+.kemp-bet .btn-options{
+    width: 22%;
+    font-size: 14px;
+    margin: 2px;
+}
+.kemp-bet .bet-price{
+    font-size: 12px;
+    color: #aaa;
+}
+.kempgroup .btn-options{
+    width: 45%;
+}
+/*--- 龍虎 ---*/
+.dratig-bet .btn-options{
+    width: 22%;
+    font-size: 14px;
+    margin: 2px;
+}
+.dratig-bet .bet-price{
+    font-size: 12px;
+    color: #aaa;
+}
+.content-options{
+    background-color: #fffc;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+/*--- 遊戲直播影片 ---*/
+.video-Vertical{
+    position: relative;
+    height: 100%;
+}
+.jessibuca-container.jessibuca-controls-show .jessibuca-controls{
+    visibility: hidden!important;
+    opacity: 0!important;
+}
+.live-video{
+    position: relative;
+}
+.live-onbtn-collapse{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    z-index: 2;
+}
+.onbtn-collapse-down{
+    color: #fff;
+    background-color: #062d5899;
+    border: 1px solid #4c9dec;
+    width: 35px;
+    border-radius: 5px;
+}
+.live-onbtn-collapse .collapsing{
+    max-width: 45px;
+}
+.live-onbtn-collapse .collapse .card-body{
+    max-width: 45px;
+    height: auto;
+    padding: 0;
+}
+.live-onbtn-collapse1{
+    position: none;
+}
+.live-onbtn-collapse1 .collapsing{
+    max-width: 45px;
+}
+.live-onbtn-collapse1 .collapse .card-body{
+    max-width: 45px;
+    height: auto;
+    padding: 0;
+}
+.btn-collapse{
+    background-color: #4c9decaa;
+    border: 1px solid #000;
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+}
+.btn-collapse:hover{
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+    background-color: #4c9dec;
+}
+.btn-Space-arrange{
+    width: 35px;
+    height: 35px;
+}
+.arrange-hor{
+    position: absolute;
+}
+.arrange-hor ul, .arrange-hor li {
+    list-style: none;
+    padding: 0; 
+    margin: 0;
+}
+.arrange-hor-menu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- Longdragon長龍 -----*/
+.longdragon .pre-game-period{
+    font-size: 12px;
+}
+.longdragon .main-content{
+    margin-top: 140px;
+}
+.rank-list{
+    margin-bottom: 130px;
+}
+.rank-list .rank-list-box{
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #bbb;
+    font-size: 14px;
+    display: block;
+}
+.detail-gamename{
+    color: #295ab3;
+}
+.detail-result{
+    align-self: center;
+}
+.detail-result span{
+    color: #f00;
+    font-size: 18px;
+}
+.detail-btn{
+    background: none;
+}
+.rank-list-box .bet-price{
+    font-size: 12px;
+}
+.rank-list-box .btn-options{
+    width: 46px;
+    margin-left: 3px;
+}
+.list-setting{
+    background-color: #042345;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    z-index: 99;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- Goodmap好路 -----*/
+.goodmap .pre-game-period{
+    font-size: 12px;
+}
+.goodmap .main-content{
+    margin-top: 140px;
+}
+.win-record{
+    margin-bottom: 130px;
+}
+.win-record .win-record-box{
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #bbb;
+    font-size: 14px;
+    display: block;
+}
+.win-record-box .btn-options {
+    width: 46px;
+    margin-left: 3px;
+}
+.win-record-box .btn-options .bet-price{
+    font-size: 12px;
+}
+.win-record-result{
+    font-size: 11px;
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+}
+.win-record-result table {
+    border-collapse: collapse;
+    width: 360px;
+    height: 90px;
+}
+.win-record-result table tr{
+    line-height: 12px;
+}
+.win-record-result table tr td{
+    height: 15px!important;
+    width: 15px!important;
+}
+.detail-type{
+    color: #295ab3;
+}
+.result-table{
+    border-collapse: collapse;
+}
+.result-table, td {
+    border: solid 1px #ddd;
+}
+.result-table .red{
+    color: #fe0060;
+}
+.result-table .blue{
+    color: #0992f0;
+}
+.setting-type .btn-white{
+    width: 22%;
+    font-size: 14px;
+    margin: 2px;
+}
+.setting-type .btn-white.active{
+    background-color: #fee34e!important;
+    border-color: #e4a206;
+    color: #000;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- waymap路書 -----*/
+.waymap .pre-game-period{
+    font-size: 12px;
+}
+.waymap .main-content{
+    margin-top: 140px;
+}
+.waymap-record{
+    margin-bottom: 190px;
+}
+.waymap-record .waymap-tab-list{
+    width: 20%;
+}
+.waymap-record .waymap-tab-content{
+    width: 80%;
+    padding: 5px;
+    padding-top: 0;
+}
+.waymap-record .waymap-options{
+    color: #000;
+    background-color: #fff;
+    border: none;
+    margin-bottom: 1px;
+    padding: 6px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.waymap-record .waymap-options.active{
+    background-color: #fee34e;
+    font-weight: 600;
+    border-bottom: 5px solid #e4a206;
+}
+.waymap-record .nav-tabs {
+    border: none;
+}
+.waymap-record .nav-link{
+    background-color: #fff;
+    border: 1px solid #4c9dec;
+    color: #000;
+}
+.waymap-record .nav-link.active{
+    background-color: #fee34e;
+    border: 1px solid #e4a206;
+    color: #000;
+}
+.waymap-record .waymap-result{
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #bbb;
+    font-size: 11px;
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+}
+.waymap-result table {
+    border-collapse: collapse;
+    width: 450px;
+    height: 90px;
+}
+.waymap-result table tr{
+    line-height: 12px;
+}
+.waymap-result table tr td{
+    height: 15px!important;
+    width: 15px!important;
+}
+.hollow-circle{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 2px solid;
+}
+.filled-circle{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 5px solid;
+}
+.straight-line{
+    display: inline-block;
+    width: 10px;
+    height: 3px;
+    border-radius: 5px;
+    transform: rotate(-45deg) scale(1.3);
+    margin-bottom: 2px;
+}
+.red .straight-line{
+    background-color: #fe0060;
+}
+.blue .straight-line{
+    background-color: #0992f0;
+}
+.play-prize{
+    font-size: 12px;
+    color: #000;
+    font-weight: 600;
+}
+.Dual .play-prize{
+    font-size: 12px;
+    color: #fff;
+}
+.play-historydisplay{
+    float: right;
+    font-size: 12px;
+    color: #fff;
+}
+.play-value{ color: #f00; }
+.content-options .options-num{
+    position: relative;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+    width: 35px;
+    min-height: 35px;
+    background-image: url(../img/ball.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    color: #555;
+    margin: 5px;
+    display: inline-block;
+}
+.content-options .options-num.active{
+    background-image: url(../img/ball-act.png);
+}
+.bet-supplement{
+    font-size: 10.5px;
+    color: #666;
+    line-height: 20px;
+}
+.bet-input textarea{
+    font-size: 14px;
+    width: 100%;
+    padding: 0;
+    color: #777;
+}
+.bet-input .bet-operate{
+    font-size: 14px;
+    color: #777;
+}
+.bet-money{line-height: 30px;}
+.tricks-options.live-flim{
+    display: inline-block;
+    color: #fff;
+    background-color: #fe0060;
+    border-radius: 5px;
+    border: solid 1px #fffa;
+}
+.tricks-options.live-flim.active{
+    color: #fe0060;
+    background-color: #ffccdf;
+}
+#casual_select .nav-tabs{
+    border: none;
+}
+#casual_select .container{
+    padding: 0;
+}
+#casual_select .nav-link{
+    background-color: #fff;
+    border: 1px solid #4c9dec;
+    color: #000;
+}
+#casual_select .nav-link.active{
+    background-color: #fee34e;
+    border: 1px solid #e4a206;
+    color: #000;
+}
+#ranking_select .nav-tabs{
+    border: none;
+}
+#ranking_select .container{
+    padding: 0;
+}
+#ranking_select .nav-link{
+    background-color: #fff;
+    border: 1px solid #4c9dec;
+    color: #000;
+}
+#ranking_select .nav-link.active{
+    background-color: #fee34e;
+    border: 1px solid #e4a206;
+    color: #000;
+}
+/*--- 投注選項選擇後 ---*/
+.btn-options.active{
+    background-color: #fee34e!important;
+    border-color: #e4a206;
+    color: #212529;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- 突出按鈕 ---*/
+.Dual .live-flim{
+    position: fixed;
+    left: 2px;
+    bottom: 10em;
+    z-index: 100;
+}
+.Dual .hashtag{
+    position: fixed;
+    left: 2px;
+    bottom: 10em;
+    z-index: 100;
+}
+@keyframes heartBeat{
+    0%{-webkit-transform:scale(1);transform:scale(1)}
+    15%{-webkit-transform:scale(1.3);transform:scale(1.3)}
+    30%{-webkit-transform:scale(1);transform:scale(1)}
+    45%{-webkit-transform:scale(1.3);transform:scale(1.3)}
+    70%{-webkit-transform:scale(1);transform:scale(1)}
+}
+.animate__heartBeat{
+    -webkit-animation-name:heartBeat;
+    animation-name:heartBeat;
+    -webkit-animation-duration:1.3s;
+    animation-duration:1.3s;
+    -webkit-animation-duration:calc(var(--animate-duration)*1.3);
+    animation-duration:calc(var(--animate-duration)*1.3);
+    -webkit-animation-timing-function:ease-in-out;
+    animation-timing-function:ease-in-out
+}
+.striking_animate{
+    animation: heartBeat 2s infinite alternate ease-in-out;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- History歷史紀錄 -----*/
+.history .main-content{
+    margin-top: 40px;
+}
+.history-list{
+    margin-bottom: 130px;
+}
+.history-list .history-list-box{
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #bbb;
+    font-size: 14px;
+    display: block;
+}
+.history-list-box .list-detail{
+    position: relative;
+    display: grid;
+}
+.history-list .history-table th{
+    background-color: #d2f4fe;
+    text-align: center;
+    border: #bbb 1px solid;
+}
+.history-list .history-table td{
+    text-align: center;
+}
+.history-table .one{background-color: #ebcc2a; color: #fff;text-shadow: 0 0 3px #000;}
+.history-table .two{background-color: #3c99ef; color: #fff;text-shadow: 0 0 3px #000;}
+.history-table .three{background-color: #666; color: #fff;text-shadow: 0 0 3px #000;}
+.history-table .four{background-color: #ff7000; color: #fff;text-shadow: 0 0 3px #000;}
+.history-table .five{background-color: #64e6ff; color: #fff;text-shadow: 0 0 3px #000;}
+.history-table .six{background-color: #620dff; color: #fff;text-shadow: 0 0 3px #000;}
+.history-table .seven{background-color: #ccc; color: #fff;text-shadow: 0 0 3px #000;}
+.history-table .eight{background-color: #ff0d0d; color: #fff;text-shadow: 0 0 3px #000;}
+.history-table .nine{background-color: #6f0100; color: #fff;text-shadow: 0 0 3px #000;}
+.history-table .ten{background-color: #39ba00; color: #fff;text-shadow: 0 0 3px #000;}
+.history-table a{
+    cursor: pointer; 
+}
+.history-type{
+    width: 100%;
+    padding: 5px 0;
+    background: #1d273a;
+}
+.history-nav{
+    list-style: none;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-left: 5px;
+    margin: 0;
+    flex-wrap: unset;
+}
+.history-nav li{
+    display: inline-block;
+    padding-right: 5px;
+}
+.history .main-content .tab-content{
+    margin-top: 10px;
+}
+.WinNum-list .WinNum-list-box{
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #bbb;
+    font-size: 14px;
+    display: block;
+}
+.WinNum-list-box .list-detail{
+    position: relative;
+    display: grid;
+}
+.WinNum-list .WinNum-table th{
+    background-color: #d2f4fe;
+    text-align: center;
+    border: #bbb 1px solid;
+}
+.WinNum-list .WinNum-table td{
+    text-align: center;
+}
+.WinNum-table .prize-num{
+    background-color: #fe0060;
+    color: #fff;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- 哈希值驗證 ---*/
+.Hash-Box{
+    max-width: 1000px;
+}
+.hashbox{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 50px;
+    background-color: #eee;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: normal;
+}
+.hashbox .btn-close{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    height: 25px;
+    width: 25px;
+    opacity: 1;
+}
+.hashbox a{
+    color: rgba(var(--bs-link-color-rgb));
+    text-decoration: underline;
+}
+/*--- 哈希值說明 ---*/
+.hash-detail{
+    color: #fff;
+    word-break: break-all;
+}
+.hash-detail a{
+    color: #fff;
+    word-break: break-all;
+}
+.hashExplain-show{
+    color: #fff;
+}
+.hashExplain{
+    background-color: #fff3;
+    word-break: break-word;
+    padding: 10px;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- 直播影片回放 ---*/
+.live-replay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000a;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.replay-video{
+    width: 100%;
+}
+.live-replay .btn-close{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    height: 25px;
+    width: 25px;
+    opacity: 1;
+    z-index: 99;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- Lobby選桌頁 -----*/
+.Lobby .main-content {
+    margin-top: 40px;
+}
+.Lobby .accordion-item:first-of-type {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.Lobby .accordion-item:last-of-type{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.Lobby .pre-game-number{
+    text-align: center;
+}
+.Certification-img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+}
+.selection .selection-box {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    position: relative;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.7),
+        inset 0px 0px 10px rgba(25,109,179,1),
+        inset 0px 0px 3px rgba(255,255,255,1),
+        inset -5px -5px 5px rgba(0,0,0,1);
+}
+.selection .selection-box:hover, .selection .selection-box:active, .selection .selection-box:focus{
+    background-color: #fee34e;
+}
+.selection-box .list-detail {
+    position: relative;
+    display: grid;
+}
+.selection-box .result-table {
+    line-height: 5px;
+    width: auto;
+    font-size: 10px;
+}
+.selection-box .hollow-circle {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid;
+    padding: 0;
+}
+.selection-GameCard.row>*{
+    padding: 0;
+}
+.selection-GameCard img{
+    height: 55px;
+    width: auto;
+}
+.selection-GameCard .GameCard-info{
+    text-align: center;
+}
+.selection-GameCard .GameCard-num {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+.selection-GameCard .GameCard-period {
+    color: #777;
+}
+.selection-GameCard .GameCard-current{
+    text-align: center;
+}
+.selection-GameCard .GameCard-state {
+    color: #2c4461; 
+}
+.selection-GameCard .GameCard-countdown {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+.selection-goodroad{
+    color: #fff;
+    text-align: center;
+}
+.GameCategories .accordion-item{
+    background-color: unset;
+}
+.GameCategories .accordion-button{
+    background: linear-gradient(0deg, #fff5, #fff2);
+    color: #fff;
+    padding: 10px;
+}
+.GameCategories .accordion {
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+.GameCategories .accordion-body{
+    background-color: #fffa;
+    padding: 0px;
+}
+.GameCategories .selection .selection-box {
+    background-color: #fff;
+    border: 1px solid #dcdcdc;
+    padding: 10px;
+    border-radius: 0px;
+    display: block;
+    position: relative;
+    box-shadow: none;
+    cursor: pointer;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- 投注紀錄頁 -----*/
+.BettingLog .main-content{
+    margin-top: 45px;
+    margin-bottom: 50px;
+}
+.BettingLog .list-box{
+    background: #fff;
+    margin: 0;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.BettingLog .list-box .list-item {
+    font-weight: 600;
+    text-align: right;
+    border-bottom: 1px dashed #ddd;
+    margin-right: -20px;
+}
+.BettingLog .list-box .list-detail {
+    border-bottom: 1px dashed #555;
+}
+.BettingLog .betting-total{
+    background-color: #154267;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 1000px;
+    z-index: 99;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- 音效開關 checkbox ---*/
+#voiceturn .modal-body{
+    margin: 0px 1em;
+}
+.voiceturn-item{
+    border-bottom: 1px dashed #555;
+    margin: 10px 0;
+}
+.voice-switch {
+    position: relative;
+    width: 45px;
+    height: 20px;
+    line-height: 20px;
+}
+.voice-switch .switch-checkbox {
+   position: absolute;
+   display: none;
+}
+.voice-switch .switch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.voice-switch .switch-txt {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.voice-switch .switch-txt::before, .voice-switch .switch-txt::after {
+    display: block;
+    float: right;
+    width: 50%;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.voice-switch .switch-txt::after {/*開關(On)*/
+    content: attr(turnOn);
+    padding-left: 5px;
+    background: #4c9dec;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+}
+.voice-switch .switch-txt::before {/*開關(Off)*/
+    content: attr(turnOff);
+    padding-right: 5px;
+    background: #aaa;
+    color: #fff;
+    text-align: right;
+}
+.voice-switch .switch-Round-btn {
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+    background: #fff;
+    top: 0;
+    bottom: 0;
+    right: 25px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in 0s;
+}
+.voice-switch .switch-checkbox:checked + .switch-label .switch-txt {
+    margin-left: 0;
+}
+.voice-switch .switch-checkbox:checked + .switch-label .switch-Round-btn{
+    right: 0;
+}
+#instructions .bet-action-btn{
+    position: relative;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- 目前注單 ---*/
+.selected-list-box{
+    background-color: #f7f7f7;
+}
+.selected-list-box .form-check-input{
+    border: 1px solid #999;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- 追號注單 ---*/
+.follow-input{
+    border: 1px solid #999;
+    border-radius: 5px;
+    width: 5em;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- 中獎框 ---*/
+.jackpot-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    text-align: center;
+}
+.jackpot-img {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.jackpot-title{
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0px 0px 20px #000;
+    width: 200px;
+    text-align: center;
+}
+.jackpot-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 150px;
+    font-size: 18px;
+    color: #f00;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- IP限制 ---*/
+.restrict-content{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.restrict-text{
+    color: #fff;
+    text-align: center;
+    align-self: center;
+}
+.restrict-title{
+    font-size: 30px;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- 編輯投注金額 -----*/
+#editamount .edit-amount{
+    width: 20%;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: solid 1px #4c9dec;
+}
+#editmultiple .edit-multiple{
+    width: 20%;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: solid 1px #4c9dec;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- 遊戲規則同意 ---*/
+#agreement_modal .modal-content{
+    border: #f00 3px solid;
+}
+#agreement_modal .modal-footer{
+    display: unset;
+}
+#agreement_modal .form-check-input {
+    border: 1px solid #999;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- 數字鍵盤 ---*/
+.show-number{
+    font-size: 30px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 3px;
+    margin: 0 5px;
+}
+.btn-showNum{
+    font-size: 20px;
+    margin: 5px;
+    border: 1px solid #bbb;
+    box-shadow: 0 0 5px #2c4461;
+    width: 100%;
+}
+.btn-showNum:focus{
+    background-color: #fee34eaa;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- 遊戲說明 ---*/
+.manual-title{
+    color: #000;
+    font-weight: 600;
+}
+.manual-item{
+    color: #2c4461;
+    font-weight: 600;
+}
+.manual-detail{
+    padding-left: 1em;
+}
+.howtoplay ul{
+    margin-bottom: 0;
+}
+.howtoplay .btn-options {
+    width: 60px;
+    font-size: 14px;
+    margin: 2px;
+    position: relative;
+}
+.howtoplay .bet-price {
+    font-size: 12px;
+    color: #aaa;
+    line-height: 12px;
+}
+.howtoplay .options-log-red {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+.howtoplay .options-log-blue {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.howtoplay .btn-bet-amount {
+    width: 50px;
+    min-width: unset;
+    border-radius: 0;
+}.howtoplay .btn-bet-reset {
+    width: 30px;
+    min-width: unset;
+    border-radius: 0;
+}
+.howtoplay .edit-amount {
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.howtoplay .bet-action-btn{
+    position: relative;
+}
+.howtoplay .selected-point {
+    position: absolute;
+    right: -5px;
+    top: -8px;
+}
+.howtoplay .bet-total {
+    color: #000;
+    text-shadow: none;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- 限紅列表 ---*/
+#betlimitslist{
+    list-style-type: none;
+}
+#betlimitslist li{
+    border-bottom: 1px solid #0002;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- 維護時間 ---*/
+.maintenance-content{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.maintenance-text{
+    text-align: center;
+    align-self: center;
+}
+.maintenance-title{
+    font-size: 30px;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- RightBar-好路 ---*/
+.show-RightBar{
+    position: fixed;
+    right: 0;
+    bottom: 8.5em;
+    z-index: 100;
+    background-color: #ff7000 ;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.show-RightBar:active, .show-RightBar:hover, .show-RightBar:focus-visible{
+    background-color: #ff7000!important;
+}
+.show-RightBar i{
+    font-size: 25px;
+    text-align: center;
+    vertical-align: middle;
+    color: #fff;
+}
+.RightBar{
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    z-index: 99;
+    background-color: #030e24aa;
+    right: -180px; /* 預設讓RightBar移到視窗外 */
+    width: 180px;
+    transition: right 0.5s ease-in-out; /* 添加过渡效果 */
+}
+.RightBar.visible {
+    right: 0; /* 将RightBar滑入视窗 */
+}
+.RightBar-good{
+    margin-bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 90%;
+}
+.RightBar-good .win-record {
+    margin-bottom: 70px;
+}
+.RightBar-good .win-record .win-record-box {
+    border-radius: 3px;
+}
+.RightBar-good .win-record-box .btn-options .bet-price {
+    font-size: 12px;
+}
+.RightBar-good .win-record-box .btn-options {
+    width: 70px;
+}
+.RightBar-good .win-record-result table {
+    width: 150px;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- 側邊SSslot ---*/
+.show-SSslot{
+    position: fixed;
+    right: 0;
+    bottom: 12em;
+    z-index: 100;
+    background-color: #fff9;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border: 1px solid #0001;
+}
+.show-SSslot:active, .show-SSslot:hover, .show-SSslot:focus-visible{
+    background-color: #fff!important;
+}
+.RightBar-slot{
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    z-index: 99;
+    background-color: #030e24aa;
+    right: -200px; /* 預設讓RightBar移到視窗外 */
+    width: 200px;
+    transition: right 0.5s ease-in-out; /* 添加过渡效果 */
+}
+.RightBar-slot.visible {
+    right: 0; /* 将RightBar滑入视窗 */
+}
+#SSgameRight{
+    height: 90%;
+}
+.SSslot-icon{
+    margin-bottom: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    padding-bottom: 70px;
+}
+.SSslot-icon img{
+    width: 75px;
+    margin: 2px;
+    cursor: pointer;
+}
+.SSslot-icon img:hover{
+    width: 85px;
+}
+/*--------------------------------------------------------------------------------*/
+/*--- 玩法標題 ---*/
+.gameModes-header .row{
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+}
+.gameModes-title{
+    color: #fff;
+    background-color: #1d273a;
+    align-items: center;
+}
+.offcanvas-gameModes{
+    height: 75%!important;
+    align-items: center;
+    background-color: #ebedf0;
+}
+.offcanvas-gameModes .offcanvas-body{
+    max-width: 1000px;
+    position: relative;
+    padding-bottom: 60px;
+}
+.btn-gameModes{
+    color: #777;
+    background-color: #fff;
+    border: 1px solid #4c9dec;
+    width: 48%;
+    height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 2px;
+    font-size: 16px;
+}
+.btn-gameModes.active{
+    color: #fff;
+    background-color: #4c9dec;
+}
+.btn-gameModes:hover{
+    border: 1px solid #000;
+}
+.gameModes-content{
+    padding-bottom: 150px;
+}
+.gameModes-content .accordion {
+    display: none;
+}
+.gameModes-content .accordion.show {
+    display: block; 
+    position: relative;
+    z-index: 1;
+}
+/*--------------------------------------------------------------------------------*/
+/*---一排二個-按鈕---*/
+.btn-half{
+    width: 45%;
+    min-height: 50px;
+    align-content: center;
+    color: #666;
+    background-color: #fff;
+    border-color: #4c9dec33;
+    margin: 2px 0;
+    position: relative;
+    box-shadow: 0 0 3px #4c9dec inset;
+}
+.btn-half:hover{
+    background-color: #fff;
+}
+.btn-half.active{
+    background-color: #fee34e;
+    border-color: #e4a206;
+}
+.btn-half .bet-price{
+    font-size: 12px;
+    color: #aaa;
+}
+/*---一排三個-按鈕---*/
+.btn-third{
+    width: 30%;
+    min-height: 50px;
+    align-content: center;
+    color: #666;
+    background-color: #fff;
+    border-color: #4c9dec33;
+    margin: 2px 0;
+    position: relative;
+    box-shadow: 0 0 3px #4c9dec inset;
+}
+.btn-third:hover{
+    background-color: #fff;
+}
+.btn-third.active{
+    background-color: #fee34e;
+    border-color: #e4a206;
+}
+.btn-third .bet-price{
+    font-size: 12px;
+    color: #aaa;
+}
+.btn-third img{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+}
+/*---一排四個-按鈕---*/
+.btn-quarter{
+    width: 22.5%;
+    min-height: 50px;
+    align-content: center;
+    color: #666;
+    background-color: #fff;
+    border-color: #4c9dec33;
+    margin: 2px 0;
+    position: relative;
+    box-shadow: 0 0 3px #4c9dec inset;
+}
+.btn-quarter:hover{
+    background-color: #fff;
+}
+.btn-quarter.active{
+    background-color: #fee34e;
+    border-color: #e4a206;
+}
+.btn-quarter .bet-price{
+    font-size: 12px;
+    color: #aaa;
+}
+/*---一排五個-按鈕---*/
+.btn-fiveequal{
+    width: 18%;
+    min-height: 50px;
+    align-content: center;
+    color: #666;
+    background-color: #fff;
+    border-color: #4c9dec33;
+    margin: 2px 0;
+    position: relative;
+    box-shadow: 0 0 3px #4c9dec inset;
+}
+.btn-fiveequal:hover{
+    background-color: #fff;
+}
+.btn-fiveequal.active{
+    background-color: #fee34e;
+    border-color: #e4a206;
+}
+.btn-fiveequal .bet-price{
+    font-size: 12px;
+    color: #aaa;
+}
+/*---一排六個-按鈕---*/
+.btn-sixequal{
+    width: 14.5%;
+    min-height: 50px;
+    align-content: center;
+    color: #666;
+    background-color: #fff;
+    border-color: #4c9dec33;
+    margin: 2px 0;
+    position: relative;
+    box-shadow: 0 0 3px #4c9dec inset;
+}
+.btn-sixequal:hover{
+    background-color: #fff;
+}
+.btn-sixequal.active{
+    background-color: #fee34e;
+    border-color: #e4a206;
+}
+.btn-sixequal .bet-price{
+    font-size: 12px;
+    color: #aaa;
+}
+/*---注區快選按鈕---*/
+.btn-hover{
+    position: relative; /* 確保內部元素的定位基於此元素 */
+    box-sizing: border-box; /* 確保內邊框不會影響元素大小 */
+    display: inline-block; /* 避免元素大小異常 */
+}
+.btn-hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 5px solid transparent;
+    transition: border-color 0.3s;
+    pointer-events: none; /* 確保內邊框不會阻止點擊事件 */
+    box-sizing: border-box; /* 確保邊框計算正確 */
+}
+.btn-hover:hover::before {
+    border-color: #2c4461;
+}
+.btn.disabled{
+    background-color: #333;
+    opacity: 0.2;
+}
+/*---注區下注選項按鈕---*/
+.btn-click:hover{
+    border: 1px solid #000;
+}
+#gameModes_continuezodiac .btn-chosenone.select{
+    color: #fff;
+    background-color: #2c4461;
+}
+#gameModes_continuelast .btn-chosenone.select{
+    color: #fff;
+    background-color: #2c4461;
+}
+#gameModes_margezodiac .btn-chosenone.select{
+    color: #fff;
+    background-color: #2c4461;
+}
+#gameModes_continuenum .btn-chosenone.select{
+    color: #fff;
+    background-color: #2c4461;
+}
+#gameModes_nothit .btn-chosenone.select{
+    color: #fff;
+    background-color: #2c4461;
+}
+#gameModes_hitone .btn-chosenone.select{
+    color: #fff;
+    background-color: #2c4461;
+}
+#gameModes_fiveelement .btn-chosenone.select{
+    color: #fff;
+    background-color: #2c4461;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- 六合彩 -----*/
+.MarkSix .topbar-game .pre-game {
+    min-height: 64px;
+}
+.MarkSix .main-content{
+    margin-top: 149px;
+}
+.MarkSix .gameModes-header{
+    position: sticky;
+    top: 149px;
+    width: 100%;
+    z-index: 2;
+}
+.MarkSix .pre-game-number .red,
+.MarkSix .pre-game-number .blue,
+.MarkSix .pre-game-number .green
+{
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 15px;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+}
+.marksix-NumGroup{
+    display: inline-block;
+    font-weight: bold;
+}
+.MarkSix .hashtag {
+    position: fixed;
+    left: 2px;
+    bottom: 10em;
+    z-index: 2;
+}
+.MarkSix .hash-detail{
+    color: #2c4461;
+}
+.MarkSix .hash-detail a{
+    color: #2c4461;
+}
+.MS-Ball01, .MS-Ball02, .MS-Ball07, .MS-Ball08, .MS-Ball12, 
+.MS-Ball13, .MS-Ball18, .MS-Ball19, .MS-Ball23, .MS-Ball24, 
+.MS-Ball29, .MS-Ball30, .MS-Ball34, .MS-Ball35, .MS-Ball40, 
+.MS-Ball45, .MS-Ball46{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #eb3349;
+    border: 2px solid #fb7a65;
+}
+.MS-Ball03, .MS-Ball04, .MS-Ball09, .MS-Ball10, .MS-Ball14, 
+.MS-Ball15, .MS-Ball20, .MS-Ball25, .MS-Ball26, .MS-Ball31, 
+.MS-Ball36, .MS-Ball37, .MS-Ball41, .MS-Ball42, .MS-Ball47, 
+.MS-Ball48{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #295ab3;
+    border: 2px solid #20b8f0;
+}
+.MS-Ball05, .MS-Ball06, .MS-Ball11, .MS-Ball16, .MS-Ball17, 
+.MS-Ball21, .MS-Ball22, .MS-Ball27, .MS-Ball28, .MS-Ball32, 
+.MS-Ball33, .MS-Ball38, .MS-Ball39, .MS-Ball43, .MS-Ball44, 
+.MS-Ball49{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #0f8b69;
+    border: 2px solid #32d874;
+}
+.accordion-body .bet-price{
+    font-size: 12px;
+    color: #aaa;
+}
+.zone-cue{
+    font-size: 12px;
+    color: #777;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- 蛋蛋 -----*/
+.DanDan .main-content {
+    margin-top: 130px;
+    padding-bottom: 150px;
+}
+.DanDan .hashtag {
+    position: fixed;
+    left: 2px;
+    bottom: 10em;
+    z-index: 2;
+}
+.DanDan .hash-detail{
+    color: #2c4461;
+}
+.DanDan .hash-detail a{
+    color: #2c4461;
+}
+.dan-Ball0, .dan-Ball13, .dan-Ball14, .dan-Ball27 {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #aaa;
+}
+.dan-Ball1, .dan-Ball4, .dan-Ball7, .dan-Ball10, .dan-Ball16, .dan-Ball19, .dan-Ball22, .dan-Ball25{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #0f8b69;
+}
+.dan-Ball3, .dan-Ball6, .dan-Ball9, .dan-Ball12, .dan-Ball15, .dan-Ball18, .dan-Ball21, .dan-Ball24{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #eb3349;
+}
+.dan-Ball2, .dan-Ball5, .dan-Ball8, .dan-Ball11, .dan-Ball17, .dan-Ball20, .dan-Ball23, .dan-Ball26 {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #295ab3;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- 福彩3D -----*/
+.Fu3d .main-content{
+    margin-top: 130px;
+}
+.Fu3d .gameModes-header{
+    position: sticky;
+    top: 130px;
+    width: 100%;
+    z-index: 2;
+}
+.Fu3d .hashtag {
+    position: fixed;
+    left: 2px;
+    bottom: 10em;
+    z-index: 2;
+}
+.Fu3d .hash-detail{
+    color: #2c4461;
+}
+.Fu3d .hash-detail a{
+    color: #2c4461;
+}
+.fu3d-Ball0, .fu3d-Ball1, .fu3d-Ball2, .fu3d-Ball3, .fu3d-Ball4, .fu3d-Ball5, .fu3d-Ball6, .fu3d-Ball7, .fu3d-Ball8, .fu3d-Ball9, 
+.fu3d-Ball10, .fu3d-Ball11, .fu3d-Ball12, .fu3d-Ball13, .fu3d-Ball14, .fu3d-Ball15, .fu3d-Ball16, .fu3d-Ball17, .fu3d-Ball18, 
+.fu3d-Ball19, .fu3d-Ball20, .fu3d-Ball21, .fu3d-Ball22, .fu3d-Ball23, .fu3d-Ball24, .fu3d-Ball25, .fu3d-Ball26, .fu3d-Ball27{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #295ab3;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- 時時彩 -----*/
+.ShiShi .main-content {
+    margin-top: 130px;
+}
+.ShiShi .gameModes-header{
+    position: sticky;
+    top: 130px;
+    width: 100%;
+    z-index: 2;
+}
+.ShiShi .hashtag {
+    position: fixed;
+    left: 2px;
+    bottom: 10em;
+    z-index: 2;
+}
+.gameModes-header .nav-pills .nav-link{
+    padding: 10px 0;
+    border: 1px solid #2c4461;
+    color: #666;
+}
+.gameModes-header .nav-pills .nav-link.active{
+    background-color: #0a465a;
+    color: #fff;
+}
+.shi-Ball0, .shi-Ball1, .shi-Ball2, .shi-Ball3, .shi-Ball4, 
+.shi-Ball5, .shi-Ball6, .shi-Ball7, .shi-Ball8, .shi-Ball9 {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #295ab3;
+}
+.Shi-textarea{
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- 11選五 -----*/
+.Pick5 .main-content {
+    margin-top: 130px;
+}
+.Pick5 .hashtag {
+    position: fixed;
+    left: 2px;
+    bottom: 10em;
+    z-index: 2;
+}
+.pick5-Ball01, .pick5-Ball02, .pick5-Ball03, .pick5-Ball04, .pick5-Ball05, 
+.pick5-Ball06, .pick5-Ball07, .pick5-Ball08, .pick5-Ball09, .pick5-Ball10, .pick5-Ball11 {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #295ab3;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- 快樂彩 -----*/
+.Happy .main-content{
+    margin-top: 130px;
+}
+.Happy .gameModes-header{
+    position: sticky;
+    top: 130px;
+    width: 100%;
+    z-index: 2;
+}
+.Happy .hashtag {
+    position: fixed;
+    left: 2px;
+    bottom: 10em;
+    z-index: 2;
+}
+.Happy .hash-detail{
+    color: #2c4461;
+}
+.Happy .hash-detail a{
+    color: #2c4461;
+}
+.happy-Ball01, .happy-Ball02, .happy-Ball03, .happy-Ball04, .happy-Ball05,
+.happy-Ball06, .happy-Ball07, .happy-Ball08, .happy-Ball09, .happy-Ball10,
+.happy-Ball11, .happy-Ball12, .happy-Ball13, .happy-Ball14, .happy-Ball15,
+.happy-Ball16, .happy-Ball17, .happy-Ball18, .happy-Ball19, .happy-Ball20 {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #295ab3;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- 七星彩 -----*/
+.Star7 .main-content{
+    margin-top: 130px;
+}
+.Star7 .gameModes-header{
+    position: sticky;
+    top: 130px;
+    width: 100%;
+    z-index: 2;
+}
+.Star7 .hashtag {
+    position: fixed;
+    left: 2px;
+    bottom: 10em;
+    z-index: 2;
+}
+.Star7 .hash-detail{
+    color: #2c4461;
+}
+.Star7 .hash-detail a{
+    color: #2c4461;
+}
+.star-Ball0, .star-Ball1, .star-Ball2, .star-Ball3, .star-Ball4, 
+.star-Ball5, .star-Ball6, .star-Ball7, .star-Ball8, .star-Ball9 {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-content: center;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #295ab3;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- 快三 -----*/
+.Fast3 .main-content {
+    margin-top: 130px;
+    padding-bottom: 150px;
+}
+.Fast3 .hashtag {
+    position: fixed;
+    left: 2px;
+    bottom: 10em;
+    z-index: 2;
+}
+.Fast3 .hash-detail{
+    color: #2c4461;
+}
+.Fast3 .hash-detail a{
+    color: #2c4461;
+}
+/*--------------------------------------------------------------------------------*/
+.spinner-border{
+    width: 16px;
+    height: 16px;
+    border: .1em solid currentColor;
+    border-right-color: transparent;
+}
+/*--------------------------------------------------------------------------------*/
+/*----- 簡易版 -----*/
+.betArea-half{
+    text-align: center;
+}
+.betArea-half .betBox{
+    display: inline-block;
+    background: #fff3;
+    width: 49%;
+    border: 2px solid #4c9dec;
+    color: #17e2f9;
+}
+.betArea-whole .betBox{
+    background: #fff3;
+    border: 2px solid #4c9dec;
+    color: #17e2f9;
+}
+.MR-Ball1, .MR-Ball2, .MR-Ball3, .MR-Ball4, .MR-Ball5,
+.MR-Ball6, .MR-Ball7, .MR-Ball8, .MR-Ball9, .MR-Ball10{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    align-content: center;
+    color: #000;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.MR-Ball1{border: 3px solid #ebcc2a;}
+.MR-Ball2{border: 3px solid #3c99ef;}
+.MR-Ball3{border: 3px solid #333;}
+.MR-Ball4{border: 3px solid #ff7000;}
+.MR-Ball5{border: 3px solid #64e6ff;}
+.MR-Ball6{border: 3px solid #620dff;}
+.MR-Ball7{border: 3px solid #ccc;}
+.MR-Ball8{border: 3px solid #ff0d0d;}
+.MR-Ball9{border: 3px solid #6f0100;}
+.MR-Ball10{border: 3px solid #39ba00;}
+.Basic .main-content{
+    margin-bottom: 120px;
+}
+.btn-3d{
+    position: relative;
+    display: inline-block;
+    margin: 8px 0px;
+}
+.btn-3d.betsel{
+    color: #666;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff;
+    position: relative;
+    box-shadow: inset 0 1px 0 #ddd, 0 5px 0 #aaa;
+    border-radius: 5px;
+}
+.btn-3d.betsel.active{
+    top: 5px;
+    background-color: #fee34e;
+    box-shadow: inset 0 1px 0 #ddd, inset 0 -3px 0 #e4a206;
+}
+.btn-3d.betsel:active{
+    background-color: #fee34e;
+    border: 1px solid #e4a206;
+}
+/*----- 資訊站 -----*/
+.info{
+    background-image: url(../img/info_BG.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+}
+.info .info-header{
+    color: #fff;
+}
+.info .info-header-time{
+    background-color: #fff3;
+    padding: 5px 0;
+    border-radius: 6px;
+}
+.info .info-history .container{
+    padding: 0;
+}
+.info .info-history{
+    height: 800px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.info .history-list{
+    margin-bottom: 5px;
+    background-color: #fff3;
+    border-bottom: 1px solid #fff5;
+}
+.info .pre-game-period{
+    color: #fff;
+    font-size: 12px;
+}
+.info .pre-game-date{
+    background-color: #ccc;
+    font-size: 12px;
+}
+.info .pre-game-play{
+    color: #fff;
+}
+.info-period{
+    background-color: #333;
+    border-radius: 5px;
+    border: 1px solid #fff3;
+}
+.btn-showAllgame{
+    background-color: #fff5;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 20px;
+}
+.btn-showAllgame:hover{
+    background-color: #fff;
+    color: #000;
+}
+.Allgame_box{
+    background-color: #fff5;
+    border-bottom: none;
+}
+.info-btn-gamename{
+    background-color: #4c9dec55;
+    color: #fff;
+}
+.info-btn-gamename:hover{
+    border: 1px solid #4c9dec;
+    color: #fff;
+}
+.info-btn-gamename.active{
+    background-color: #fee34e55;
+    border-color: #e4a206;
+    color: #fff;
+}
+.info-gametitle{
+    color: #fff;
+    background-color: #fff3;
+    width: fit-content;
+    border: 1px solid #fee34e55;
+}
+.info .marksix-NumGroup{
+    color: #fff;
+}
+.info .btn-renewgamedetail{
+    background-color: #fff5;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 5px 20px;
+}
+.info .btn-renewgamedetail:hover{
+    background-color: #fff;
+    color: #000;
+}
+.live-container video{
+    height: 165px!important;
+}
+.info .jb-pro-container.jb-pro-controls-show .jb-pro-controls {
+    visibility: hidden!important;
+}
+@media screen and (max-width: 500px){
+    .M-hide{display: none;}
+}
+/*--------------------------------------------------------------------------------*/
+/*----- 電腦版設定 -----*/
+@media screen and (min-width: 540px){
+    .game-name-text{min-width: 200px;}
+}
+@media screen and (min-width: 960px){
+    .homepage{
+        max-width: 1000px;
+        margin: 0 auto;
+        height: 100vh;
+        position: relative;
+    }
+    .top-bar {
+        position: relative;
+    }
+    .topbar-game .game-tablename{
+        font-size: 28px;
+    }
+    .topbar-game .countdown .time{
+        font-size: 40px;
+    }
+    .topbar-game-info {
+        height: 70px;
+    }
+    .game-name-text{
+        left: 150px;
+        padding-top: 15px;
+        min-width: 300px;
+    }
+    .MarkSix .gameModes-header {
+        top: 183px;
+    }
+    .MarkSix .top-bar, .DanDan .top-bar, .Fu3d .top-bar, .ShiShi .top-bar,
+    .Pick5 .top-bar, .Happy .top-bar, .Star7 .top-bar, .Fast3 .top-bar {
+        position: fixed;
+        width: 1000px;
+    }
+    .Fu3d .gameModes-header, .ShiShi .gameModes-header,
+    .Pick5 .gameModes-header, .Happy .gameModes-header, 
+    .Star7 .gameModes-header {
+        top: 154px;
+    }
+    .MarkSix .gameModes-title, .Fu3d .gameModes-title,
+    .ShiShi .gameModes-title, .Pick5 .gameModes-title,
+    .Happy .gameModes-title, .Star7 .gameModes-title {
+        max-width: 1000px;
+        margin: 0;
+    }
+    .pre-game-number .one, .pre-game-number .two,
+    .pre-game-number .three, .pre-game-number .four,
+    .pre-game-number .five, .pre-game-number .six,
+    .pre-game-number .seven,  .pre-game-number .eight,
+    .pre-game-number .nine, .pre-game-number .ten {
+        font-size: 24px;
+        height: 40px;
+        width: 40px;
+    }
+    .BettingLog .pre-game-number .one, .BettingLog .pre-game-number .two,
+    .BettingLog .pre-game-number .three, .BettingLog .pre-game-number .four,
+    .BettingLog .pre-game-number .five, .BettingLog .pre-game-number .six,
+    .BettingLog .pre-game-number .seven,  .BettingLog .pre-game-number .eight,
+    .BettingLog .pre-game-number .nine, .BettingLog .pre-game-number .ten {
+        font-size: 18px;
+        height: 30px;
+        width: 30px;
+    }
+    .main-content {
+        margin-top: 0px;
+    }
+    .Dual .main-content {
+        margin-top: 10px;
+    }
+    .Basic .main-content {
+        padding-bottom: 120px;
+    }
+    .history .main-content {
+        margin-top: 0px;
+    }
+    .BettingLog .main-content {
+        margin-top: 0px;
+        padding-bottom: 60px;
+    }
+    .waymap .main-content {
+        margin-top: 5px;
+    }
+    .goodmap .main-content {
+        margin-top: 0px;
+    }
+    .longdragon .main-content{
+        margin-top: 0px;
+    }
+    .Lobby .main-content {
+        margin-top: 0px;
+    }
+    .MarkSix .main-content {
+        margin-top: 180px;
+    }
+    .DanDan .main-content {
+        margin-top: 160px;
+    }
+    .Fu3d .main-content {
+        margin-top: 150px;
+    }
+    .ShiShi .main-content {
+        margin-top: 150px;
+    }
+    .Pick5 .main-content {
+        margin-top: 150px;
+    }
+    .Happy .main-content {
+        margin-top: 150px;
+    }
+    .Star7 .main-content {
+        margin-top: 150px;
+    }
+    .Fast3 .main-content {
+        margin-top: 160px;
+    }
+    .bet-tricks {
+        padding-bottom: 130px;
+    }
+    .waymap-record {
+        padding-bottom: 190px;
+    }
+    .win-record {
+        padding-bottom: 130px;
+    }
+    .win-record .win-record-box {
+        font-size: 16px;
+    }
+    .setting-type .btn-white {
+        font-size: 16px;
+    }
+    .rank-list {
+        padding-bottom: 130px;
+    }
+    .rank-list .rank-list-box {
+        font-size: 16px;
+    }
+    .selection-GameCard img{
+        height: 100px;
+        width: auto;
+    }
+    .MS-Ball01, .MS-Ball02, .MS-Ball03, .MS-Ball04, .MS-Ball05, .MS-Ball06, .MS-Ball07, .MS-Ball08, .MS-Ball09, .MS-Ball10, 
+    .MS-Ball11, .MS-Ball12, .MS-Ball13, .MS-Ball14, .MS-Ball15, .MS-Ball16, .MS-Ball17, .MS-Ball18, .MS-Ball19, .MS-Ball20,
+    .MS-Ball21, .MS-Ball22, .MS-Ball23, .MS-Ball24, .MS-Ball25, .MS-Ball26, .MS-Ball27, .MS-Ball28, .MS-Ball29, .MS-Ball30,
+    .MS-Ball31, .MS-Ball32, .MS-Ball33, .MS-Ball34, .MS-Ball35, .MS-Ball36, .MS-Ball37, .MS-Ball38, .MS-Ball39, .MS-Ball40,  
+    .MS-Ball41, .MS-Ball42, .MS-Ball43, .MS-Ball44, .MS-Ball45, .MS-Ball46, .MS-Ball47, .MS-Ball48, .MS-Ball49{
+        height: 40px;
+        width: 40px;
+        font-size: 24px;
+        line-height: 31px;
+    }
+    .MS-Ball01 .AnimalName, .MS-Ball02 .AnimalName, .MS-Ball03 .AnimalName, .MS-Ball04 .AnimalName, .MS-Ball05 .AnimalName, .MS-Ball06 .AnimalName, .MS-Ball07 .AnimalName, .MS-Ball08 .AnimalName, .MS-Ball09 .AnimalName, .MS-Ball10 .AnimalName, 
+    .MS-Ball11 .AnimalName, .MS-Ball12 .AnimalName, .MS-Ball13 .AnimalName, .MS-Ball14 .AnimalName, .MS-Ball15 .AnimalName, .MS-Ball16 .AnimalName, .MS-Ball17 .AnimalName, .MS-Ball18 .AnimalName, .MS-Ball19 .AnimalName, .MS-Ball20 .AnimalName,
+    .MS-Ball21 .AnimalName, .MS-Ball22 .AnimalName, .MS-Ball23 .AnimalName, .MS-Ball24 .AnimalName, .MS-Ball25 .AnimalName, .MS-Ball26 .AnimalName, .MS-Ball27 .AnimalName, .MS-Ball28 .AnimalName, .MS-Ball29 .AnimalName, .MS-Ball30 .AnimalName,
+    .MS-Ball31 .AnimalName, .MS-Ball32 .AnimalName, .MS-Ball33 .AnimalName, .MS-Ball34 .AnimalName, .MS-Ball35 .AnimalName, .MS-Ball36 .AnimalName, .MS-Ball37 .AnimalName, .MS-Ball38 .AnimalName, .MS-Ball39 .AnimalName, .MS-Ball40 .AnimalName,  
+    .MS-Ball41 .AnimalName, .MS-Ball42 .AnimalName, .MS-Ball43 .AnimalName, .MS-Ball44 .AnimalName, .MS-Ball45 .AnimalName, .MS-Ball46 .AnimalName, .MS-Ball47 .AnimalName, .MS-Ball48 .AnimalName, .MS-Ball49 .AnimalName{
+        font-size: 16px!important;
+    }
+    .dan-Ball1, .dan-Ball2, .dan-Ball3, .dan-Ball4, .dan-Ball5, .dan-Ball6, .dan-Ball7, .dan-Ball8, .dan-Ball9, .dan-Ball10, 
+    .dan-Ball11, .dan-Ball12, .dan-Ball13, .dan-Ball14, .dan-Ball15, .dan-Ball16, .dan-Ball17, .dan-Ball18, .dan-Ball19, .dan-Ball20,
+    .dan-Ball21, .dan-Ball22, .dan-Ball23, .dan-Ball24, .dan-Ball25, .dan-Ball26, .dan-Ball27, .dan-Ball0{
+        height: 40px;
+        width: 40px;
+        font-size: 24px;
+    }
+    .info .pre-game-period{font-size: 16px;}
+    .info .pre-game-date{font-size: 16px;}
+}
+/*--------------------------------------------------------------------------------*/
+/*----- 當畫面小於540 -----*/
+@media screen and (max-width: 540px){
+    /*----- 語系各別設定 -----*/
+    .lang-en-us .MarkSix .game-tablename{font-size: 10px;}
+    .lang-vi-vn .MarkSix .game-tablename{font-size: 10px;}
+    .lang-ja-jp .MarkSix .game-tablename{font-size: 10px;}
+    .lang-th-th .MarkSix .game-tablename{font-size: 10px;}
+    .lang-id-id .MarkSix .game-tablename{font-size: 10px;}
+    .lang-tl-ph .MarkSix .game-tablename{font-size: 10px;}
+    .lang-vi-vn #roundstatus{font-size: 12px;}
+    .lang-th-th #roundstatus{font-size: 12px;}
+    .lang-id-id #roundstatus{font-size: 10px;}
+    .lang-tl-ph #roundstatus{font-size: 10px;}
+}
+/*----- 當畫面小於410 -----*/
+@media screen and (max-width: 410px){
+    .bet-action .bet-action-btn{height: 45px; font-size: 14px;}
+    .bet-action-btn span i {font-size: 22px;}
+    .bet-area .bet-total {font-size: 12px;letter-spacing: -0.5px;}
+    .options-log-blue, .options-log-red{font-size: 10px; padding: 1px;border-radius: 3px;}
+    .index .Certification-img{width: 100%;}
+}
+/*----- 當畫面小於370 -----*/
+@media screen and (max-width: 370px){
+    body {font-size: 12px;}
+    .btn{font-size: 12px;}
+    .topbar-game .game-name {font-size: 16px;}
+    .countdown .time {font-size: 20px;}
+    .bet-action .bet-action-btn{height: 40px;width: 30px;font-size: 10px;line-height: 10px;}
+    .bet-action-btn span i {font-size: 20px;}
+}
+/*----- 當畫面小於340 -----*/
+@media screen and (max-width: 340px){
+    .Dual .pre-game-number .one, .Dual .pre-game-number .two, 
+    .Dual .pre-game-number .three, .Dual .pre-game-number .four, 
+    .Dual .pre-game-number .five, .Dual .pre-game-number .six, 
+    .Dual .pre-game-number .seven, .Dual .pre-game-number .eight, 
+    .Dual .pre-game-number .nine, .Dual .pre-game-number .ten {
+        height: 20px;
+        width: 20px;
+        font-size: 12px;
+    }
+}
+/*--------------------------------------------------------------------------------*/
+/*----- 手機橫向 -----*/
+@media (min-width: 800px) and (max-width: 960px){
+    .Dual .main-content{margin-top: 112px;}
+    .topbar-set{height: 35px;}
+    .topbar-game-info{height: 40px;}
+    .topbar-game .pre-game{min-height: 30px;}
+    .countdown .time{padding: 3px; font-size: 20px;}
+    .bet-action .bet-action-btn{height: 30px;}
+    .bet-action-btn span i{font-size: 16px;}
+    .bet-total{font-size: 10px;}
+    .bet-amount{margin-top: 2px;}
+    .bet-action{margin-top: 2px;}
+    .Dual .live-flim{bottom: 5em;}
+    .Dual .hashtag{bottom: 5em;}
+    .MarkSix .hashtag{bottom: 5em;}
+    .DanDan .hashtag{bottom: 5em;}
+    .Fu3d .hashtag{bottom: 5em;}
+    .ShiShi .hashtag{bottom: 5em;}
+    .Pick5 .hashtag{bottom: 5em;}
+    .Happy .hashtag{bottom: 5em;}
+    .Star7 .hashtag{bottom: 5em;}
+    .Fast3 .hashtag{bottom: 5em;}
+}
+/*--------------------------------------------------------------------------------*/
+/*----- spinner旋轉loading -----*/
+.spinner {
+    border: 4px solid rgba(0, 0, 0, .1);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-left-color: #09f;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+/*--------------------------------------------------------------------------------*/
+/*----- 語系各別設定 -----*/
+.lang-en-us .M6zodiac {font-size: 10px;}
+.lang-vi-vn .M6zodiac {font-size: 12px;}
+.lang-ja-jp .M6zodiac {font-size: 10px;}
+.lang-ko-kr .M6zodiac {font-size: 12px;}
+.lang-th-th .M6zodiac {font-size: 14px;}
+.lang-id-id .M6zodiac {font-size: 10px;}
+.lang-tl-ph .M6zodiac {font-size: 9px;}
+/*--------------------------------------------------------------------------------*/
+/*----- ss-slot -----*/
+.ssgame-show{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000a;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.replay-video{
+    width: 100%;
+}
+.ssgame-show .btn-close{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    height: 25px;
+    width: 25px;
+    opacity: 1;
+}
