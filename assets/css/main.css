@@ -332,7 +332,102 @@ header .iconBtn{
     width: 31px;
     height: auto;
 }
-
+/*--- LivegameBox ---*/
+.LivegameBox{
+    margin: 20px 0;
+}
+@media (max-width: 720px){
+    .LivegameBox{margin: 10px;}
+}
+.LivegameBox .container{
+    background: rgba(44, 24, 91, 1);
+    border-radius: 15px;
+    padding: 15px;
+}
+.LivegameBox-title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+}
+.LivegameBox-icon{
+    width: 31px;
+    height: auto;
+}
+/*--- BonusBox ---*/
+@media (max-width: 720px){
+    .BonusBox .container img{
+        margin: 5px 0;
+    }
+}
+/*--- footer ---*/
+.Publisher-icon img{
+    height: 16px;
+    width: auto;
+}
+footer hr{
+    border-bottom: 1px solid rgba(109, 4, 221, 1);
+    margin: .5em;
+}
+footer .Payment-icon .Payment-text{
+    color: rgba(255, 156, 0, 1);
+    font-size: 20px;
+    font-weight: 700;
+}
+.Payment-icon img{
+    height: auto;
+    width: 32px;
+    margin: 0 10px;
+}
+.copyright-bar{
+    background: rgba(44, 24, 91, 1);
+}
+/* scroll to top */
+.RightFloat {
+    position: fixed;
+    width: 86px;
+    height: 86px;
+    background: rgba(109, 4, 221, 1);
+    bottom: 50px;
+    right: 20px;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+.scroll-to-top img {
+    width: 24px;
+    height: 24px;
+}
+.scroll-to-top span {
+    font-size: 20px;
+    line-height: 20px;
+}
+/* LeftFloat */
+.LeftFloat {
+    position: fixed;
+    width: 85px;
+    height: 360px;
+    background: rgba(109, 4, 221, 1);
+    top: 45%;
+    left: 20px;
+    z-index: 99;
+}
+.LeftFloat img {
+    width: 24px;
+    height: 22px;
+}
+.FloatBtn{
+    color: rgba(153, 153, 153, 1);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 28px 0;
+    font-size: 12px;
+}
 
 
 
