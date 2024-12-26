@@ -20,21 +20,45 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
     setInterval(scroll, 5000);   //滾動間隔時間
+
+    $(window).on("scroll", function () {
+        
+        if ($(".scroll-to-top").length) {
+          var strickyScrollPos = 100;
+          if ($(window).scrollTop() > strickyScrollPos) {
+            $(".scroll-to-top").fadeIn(500);
+          } else if ($(this).scrollTop() <= strickyScrollPos) {
+            $(".scroll-to-top").fadeOut(500);
+          }
+        }
+      });
 });
 
 
 document.addEventListener("DOMContentLoaded", () => {
-    const container = document.querySelector(".gameBox-img");
-    const leftBtn = document.querySelector(".scroll-btn.left-btn");
-    const rightBtn = document.querySelector(".scroll-btn.right-btn");
-
-    const scrollAmount = 300; // 每次滾動的距離
-
-    leftBtn.addEventListener("click", () => {
-        container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+    const scrollAmount = 300;   // 每次滾動的距離
+    // 選取所有左右按鈕
+    const leftButtons = document.querySelectorAll(".scroll-btn.left-btn");
+    const rightButtons = document.querySelectorAll(".scroll-btn.right-btn");
+    // 左側按鈕
+    leftButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const id = button.getAttribute("data-id");   // 取得 data-id
+            const container = document.querySelector(`.gameBox-img[data-id="${id}"]`);
+            if (container) {
+                container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+            }
+        });
     });
-
-    rightBtn.addEventListener("click", () => {
-        container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    // 右側按鈕
+    rightButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+            const id = button.getAttribute("data-id");   // 取得 data-id
+            const container = document.querySelector(`.gameBox-img[data-id="${id}"]`);
+            if (container) {
+                container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+            }
+        });
     });
 });
+
