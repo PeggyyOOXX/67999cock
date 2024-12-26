@@ -428,6 +428,27 @@ footer .Payment-icon .Payment-text{
     margin: 28px 0;
     font-size: 12px;
 }
+/* 小畫面時的調整 */
+@media (max-width: 720px) {
+    .LeftFloat {
+        width: 100%; /* 讓區塊寬度滿版 */
+        height: 60px; /* 設定固定高度 */
+        bottom: 0; /* 固定在畫面下方 */
+        left: 0; /* 置中 */
+        top: auto; /* 取消頂部距離 */
+        border-radius: 10px 10px 0 0; /* 圓角 */
+    }
+
+    .FloatBtn {
+        flex-direction: row; /* 改為橫向排列 */
+        margin: 0 15px; /* 增加間距 */
+        font-size: 14px; /* 字體調整 */
+    }
+
+    .LeftFloat img {
+        margin-right: 8px; /* 圖示和文字之間的間距 */
+    }
+}
 
 
 
