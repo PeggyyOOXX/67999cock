@@ -21,44 +21,44 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     setInterval(scroll, 5000);   //滾動間隔時間
 
-    $(window).on("scroll", function () {
-        
-        if ($(".scroll-to-top").length) {
-          var strickyScrollPos = 100;
-          if ($(window).scrollTop() > strickyScrollPos) {
-            $(".scroll-to-top").fadeIn(500);
-          } else if ($(this).scrollTop() <= strickyScrollPos) {
-            $(".scroll-to-top").fadeOut(500);
-          }
-        }
-      });
-});
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    const scrollAmount = 300;   // 每次滾動的距離
-    // 選取所有左右按鈕
-    const leftButtons = document.querySelectorAll(".scroll-btn.left-btn");
+    //遊戲區塊左右滑動
+    const scrollAmount = 300;   //每次滾動的距離
+    const leftButtons = document.querySelectorAll(".scroll-btn.left-btn");   //選取所有左右按鈕
     const rightButtons = document.querySelectorAll(".scroll-btn.right-btn");
-    // 左側按鈕
-    leftButtons.forEach((button) => {
+    
+    leftButtons.forEach((button) => {   //左側按鈕
         button.addEventListener("click", () => {
-            const id = button.getAttribute("data-id");   // 取得 data-id
+            const id = button.getAttribute("data-id");   //取得 data-id
             const container = document.querySelector(`.gameBox-img[data-id="${id}"]`);
             if (container) {
                 container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
             }
         });
     });
-    // 右側按鈕
-    rightButtons.forEach((button) => {
+    rightButtons.forEach((button) => {   //右側按鈕
         button.addEventListener("click", () => {
-            const id = button.getAttribute("data-id");   // 取得 data-id
+            const id = button.getAttribute("data-id");   //取得 data-id
             const container = document.querySelector(`.gameBox-img[data-id="${id}"]`);
             if (container) {
                 container.scrollBy({ left: scrollAmount, behavior: "smooth" });
             }
         });
     });
+
+    //回頂部按鈕
+    const scrollToTopButton = document.getElementById("scrollToTop");
+    window.addEventListener("scroll", () => {   //監聽滾動事件
+        if (window.scrollY > 100) {   //當滾動超過100px
+            scrollToTopButton.classList.add("show");
+        } else {
+            scrollToTopButton.classList.remove("show");
+        }
+    });
+    scrollToTopButton.addEventListener("click", (e) => {   //點擊按鈕滾動回頂部
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
 });
+
+
 
