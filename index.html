@@ -9,7 +9,7 @@
         <meta name="format-detection" content="telephone=no">
 
         <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./assets/css/main.css?si">
+        <link rel="stylesheet" href="./assets/css/main.css">
 
         <script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="./assets/js/jquery0.min.js"></script>
@@ -25,7 +25,7 @@
                         LOGO
                     </div>
 
-                    <div class="col text-end">  <!-- Logged in--->
+                    <div class="col text-end" style="display: none;">  <!-- Logged in--->
                         <button class="iconBtn">
                             <img src="./assets/img/icon/png/mail.png">
                             <span class="msg-amoint">99+</span>
@@ -34,7 +34,7 @@
                             <img src="./assets/img/icon/png/logout.png">
                         </button>
                     </div>
-                    <div class="col text-end" style="display: none;">  <!-- Not Logged in--->
+                    <div class="col text-end">  <!-- Not Logged in--->
                         <button class="btn btn-primary-variant">Login</button>
                         <button class="btn btn-primary">Register</button>
                     </div>
@@ -108,38 +108,38 @@
         <!-- MenuBox -->
         <div class="MenuBox">
             <div class="container">
-                <button class="btn btn-secondary">
+                <a href="#" class="btn btn-secondary">
                     <img src="./assets/img/icon/png/hot.png" class="MenuBox-icon"><br>
                     <span>Hot</span>
-                </button>
-                <button class="btn btn-secondary">
+                </a>
+                <a href="#" class="btn btn-secondary">
                     <img src="./assets/img/icon/png/daga.png" class="MenuBox-icon"><br>
                     <span>Daga</span>
-                </button>
-                <button class="btn btn-secondary">
+                </a>
+                <a href="#" class="btn btn-secondary">
                     <img src="./assets/img/icon/png/slot.png" class="MenuBox-icon"><br>
                     <span>Slot</span>
-                </button>
-                <button class="btn btn-secondary">
+                </a>
+                <a href="#" class="btn btn-secondary">
                     <img src="./assets/img/icon/png/live.png" class="MenuBox-icon"><br>
                     <span>Casino</span>
-                </button>
-                <button class="btn btn-secondary">
+                </a>
+                <a href="#" class="btn btn-secondary">
                     <img src="./assets/img/icon/png/football.png" class="MenuBox-icon"><br>
                     <span>Sports</span>
-                </button>
-                <button class="btn btn-secondary">
+                </a>
+                <a href="#" class="btn btn-secondary">
                     <img src="./assets/img/icon/png/Subtract.png" class="MenuBox-icon"><br>
                     <span>Poker</span>
-                </button>
-                <button class="btn btn-secondary">
+                </a>
+                <a href="#" class="btn btn-secondary">
                     <img src="./assets/img/icon/png/fish.png" class="MenuBox-icon"><br>
                     <span>Fishing</span>
-                </button>
-                <button class="btn btn-secondary">
+                </a>
+                <a href="#" class="btn btn-secondary">
                     <img src="./assets/img/icon/png/esport.png" class="MenuBox-icon"><br>
                     <span>Esports</span>
-                </button>
+                </a>
             </div>
         </div>
 
@@ -784,13 +784,14 @@
                 <img src="./assets/img/icon/png/pay/usdt.png">
                 <img src="./assets/img/icon/png/pay/paymaya.png">
             </div>
+            <hr>
             <div class="copyright-bar py-10">
                 © 2024 START Copyrights. All Rights Reserved
             </div>
         </footer>
 
         <!-- scroll to top -->
-        <div class="RightFloat scroll-to-top">
+        <div class="RightFloat scroll-to-top MOBhide" id="scrollToTop">
             <a href="#" class="FloatBtn">
                 <img src="./assets/img/icon/png/top.png">
                 <span>top</span>
@@ -821,6 +822,38 @@
             </a>
         </div>
         
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                    Show a second modal and hide this one with the button below.
+                    </div>
+                    <div class="modal-footer">
+                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                Hide this modal and show the first with the button below.
+                </div>
+                <div class="modal-footer">
+                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+                </div>
+            </div>
+            </div>
+        </div>
 
 
 
