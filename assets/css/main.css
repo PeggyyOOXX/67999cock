@@ -206,6 +206,7 @@ header .iconBtn{
     width: 161px;
     height: 198px;
     margin: 5px 0px;
+    position: relative;
 }
 .GameImgBox a{
     text-decoration: none;
@@ -214,6 +215,13 @@ header .iconBtn{
 .GameImgBox .GameImg-main{
     width: 161px;
     height: 153px;
+}
+.GameImg-hot{
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 40px;
+    height: 44px;
 }
 .GameImg-logo{
     width: 40px;
