@@ -58,6 +58,21 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
+
+
+    // 取得元素
+    const passwordInput = document.getElementById("Password_input");
+    const eyeIcon = document.getElementById("eyeIcon");
+    // 當點擊眼睛圖標時，切換密碼顯示或隱藏
+    eyeIcon.addEventListener("click", function() {
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";  // 顯示密碼
+            eyeIcon.src = "./assets/img/icon/png/eye.png";  // 變更眼睛圖標為隱藏
+        } else {
+            passwordInput.type = "password";  // 隱藏密碼
+            eyeIcon.src = "./assets/img/icon/png/eye-off.png";  // 變更眼睛圖標為顯示
+        }
+    });
 });
 
 
