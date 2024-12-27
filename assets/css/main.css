@@ -366,6 +366,7 @@ header .iconBtn{
 .Publisher-icon img{
     height: 16px;
     width: auto;
+    margin: 0 10px;
 }
 footer hr{
     border-bottom: 1px solid rgba(109, 4, 221, 1);
@@ -386,6 +387,7 @@ footer .Payment-icon .Payment-text{
 }
 @media (max-width: 767px){
     footer{margin-bottom: 72px;}
+    .Publisher-icon img{margin: 5px;}
 }
 /* scroll to top */
 .RightFloat {
