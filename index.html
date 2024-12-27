@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="./assets/css/main.css">
 
         <script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"></script>
-        <script type="text/javascript" src="./assets/js/jquery0.min.js"></script>
         <script type="text/javascript" src="./assets/js/customize.js"></script>
     </head>
 
@@ -35,8 +34,8 @@
                         </button>
                     </div>
                     <div class="col text-end">  <!-- Not Logged in--->
-                        <button class="btn btn-primary-variant">Login</button>
-                        <button class="btn btn-primary">Register</button>
+                        <button class="btn btn-primary-variant" data-bs-target="#" data-bs-toggle="modal">Login</button>
+                        <button class="btn btn-primary" data-bs-target="#Signup_modal" data-bs-toggle="modal">Register</button>
                     </div>
                 </div>
             </div>
@@ -822,34 +821,104 @@
             </a>
         </div>
         
-        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <!-- Login Modal -->
+        <div class="modal fade" id="Login_modal" aria-hidden="true" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close btn-close-light" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                    Show a second modal and hide this one with the button below.
-                    </div>
-                    <div class="modal-footer">
-                    <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+                        <h1 class="modal-title text-center">Login</h1>
+                        <div>
+                            <div class="InputBox-title">*Phone number</div>
+                            <input type="text" class="input-content" placeholder="Phone number">
+                        </div>
+                        <div>
+                            <div class="InputBox-title">*Password</div>
+                            <div class="Password-input-wrapper">
+                                <input type="text" class="input-content" placeholder="Password" id="Password_input">
+                                <img src="./assets/img/icon/png/eye-off.png" class="eye-icon" id="eyeIcon" alt="eye-icon">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="InputBox-title InputBox-title-big">*Verification code</div>
+                            <div class="Verification-input-wrapper">
+                                <input type="text" class="input-content" placeholder="Verification code">
+                                <button class="btn btn-primary arrow-cycle-icon">
+                                    <img src="./assets/img/icon/png/arrow-cycle-white.png">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="text-center mt-30">
+                            <button class="btn btn-primary" data-bs-toggle="modal">Sign up</button>
+                        </div>
+                        <div class="text-center mt-30">Don't have an account yet? 
+                            <a href="#" class="red-text" data-bs-target="#Signup_modal"data-bs-toggle="modal">Sign up</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+
+        <!-- Signup Modal -->
+        <div class="modal fade" id="Signup_modal" aria-hidden="true" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-light" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                Hide this modal and show the first with the button below.
+                    <h1 class="modal-title text-center">Sign up</h1>
+                    <div>
+                        <div class="InputBox-title">*Phone number</div>
+                        <input type="text" class="input-content" placeholder="Phone number">
+                    </div>
+                    <div>
+                        <div class="InputBox-title">*Password</div>
+                        <div>Daga123123 (the letter 'D' is in uppercase, without diacritics</div>
+                        <div class="Password-input-wrapper">
+                            <input type="text" class="input-content" placeholder="Password" id="Password_input">
+                            <img src="./assets/img/icon/png/eye-off.png" class="eye-icon" id="eyeIcon" alt="eye-icon">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="InputBox-title InputBox-title-big">*Verification code</div>
+                        <div class="Verification-input-wrapper">
+                            <input type="text" class="input-content" placeholder="Verification code">
+                            <button class="btn btn-primary arrow-cycle-icon">
+                                <img src="./assets/img/icon/png/arrow-cycle-white.png">
+                            </button>
+                        </div>
+                        <label>
+                            <input type="radio" name="agree"> I agree to the 
+                            <a href="#" class="red-text">relevant terms</a> and <a href="#" class="red-text">privacy policy</a>
+                        </label>
+                    </div>
+                    <div class="text-center mt-30">
+                        <button class="btn btn-primary" data-bs-toggle="modal">Sign up</button>
+                    </div>
                 </div>
-                <div class="modal-footer">
-                <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+            </div>
+            </div>
+        </div>
+
+        <!-- Register success Modal -->
+        <div class="modal fade" id="Registersuccess_modal" aria-hidden="true" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close btn-close-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-title text-center">You have successfully registered!</div>
+                    <div class="text-center my-30">
+                        <button class="btn btn-primary" data-bs-toggle="modal">
+                            <img src="./assets/img/icon/png/arrow-cycle-white.png">
+                            Please refresh!
+                            <img src="./assets/img/icon/png/arrow-cycle-white.png">
+                        </button>
+                    </div>
                 </div>
             </div>
             </div>
