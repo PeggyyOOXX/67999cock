@@ -553,7 +553,11 @@ footer .Payment-icon .Payment-text{
 .py-30 {padding-top: 30px!important;padding-bottom: 30px!important;}
 .py-40 {padding-top: 40px!important;padding-bottom: 40px!important;}
 .py-50 {padding-top: 50px!important;padding-bottom: 50px!important;}
+
 /*--- Button ---*/
+button{
+    font-size: unset;
+}
 .btn{
     padding: 8px 16px;
     border-radius: 25px;
@@ -688,6 +692,99 @@ footer .Payment-icon .Payment-text{
     color: white;
     border-color: grey;
 }
+
+
+
+/*--- modal ---*/
+.modal-content{
+    background: rgba(22, 14, 49, 1);
+}
+.btn-close-light {
+    filter: invert(1); /* 將顏色反轉，適用於白色 */
+}
+.modal-header{
+    border-bottom: none;
+}
+.modal-footer{
+    border-top: none;
+}
+.InputBox-title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.InputBox-title-big{
+    font-size: 28px;
+}
+.input-content{
+    width: 100%;
+    height: 48px;
+    background: rgba(44, 24, 91, 1);
+    border: 1px solid rgba(255, 199, 0, 1);
+    padding: 8px 24px;
+    border-radius: 24px;
+    margin-top: 10px;
+}
+.Password-input-wrapper{
+    position: relative;
+}
+.Password-input-wrapper .input-content {
+    padding-right: 40px;   /* 讓密碼框的右邊有空間顯示圖標 */
+    padding: 10px;
+}
+.eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 35px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 24px;
+    height: auto;
+}
+.Verification-input-wrapper{
+    position: relative;
+}
+.Verification-input-wrapper .input-content {
+    padding-right: 40px;
+    padding: 10px;
+}
+.arrow-cycle-icon {
+    position: absolute;
+    right: 15px; /* 讓按鈕距離右邊的距離 */
+    top: 35px;
+    transform: translateY(-50%); /* 垂直居中 */
+    cursor: pointer;
+    padding: 0;
+    width: 74px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-cycle-icon img {
+    width: 20px;
+    height: 20px;
+}
+#Registersuccess_modal .modal-title{
+    color: rgba(255, 199, 0, 1);
+    font-size: 28px;
+    font-weight: 700;
+    padding: 0 20px;
+}
+#Registersuccess_modal .btn-primary{
+    font-size: 28px;
+    font-weight: 700;
+}
+#Registersuccess_modal .btn-primary img{
+    width: 24px;
+    height: 24px;
+}
+.red-text{
+    color:rgba(255, 24, 24, 1);
+
+}
+
+
 /*--------------------------------------------------------------------------------*/
 @media screen and (min-width: 768px){
     .PChide{display: none;}
