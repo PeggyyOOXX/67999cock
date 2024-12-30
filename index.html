@@ -3,13 +3,11 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
-        <title>Index</title>
-        <meta name="apple-mobile-web-app-capable" content="yes"><!-- Mobile full-screen -->
-        <meta name="mobile-web-app-capable" content="yes"><!-- Mobile full-screen -->
         <meta name="format-detection" content="telephone=no">
+        <title>Index</title>
 
         <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./assets/css/main.css?se">
+        <link rel="stylesheet" href="./assets/css/main.css?z">
 
         <script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"></script>
         <script type="text/javascript" src="./assets/js/customize.js"></script>
@@ -34,7 +32,7 @@
                         </button>
                     </div>
                     <div class="col text-end">  <!-- Not Logged in--->
-                        <button class="btn btn-primary-variant" data-bs-target="#" data-bs-toggle="modal">Login</button>
+                        <button class="btn btn-primary-variant" data-bs-target="#Login_modal" data-bs-toggle="modal">Login</button>
                         <button class="btn btn-primary" data-bs-target="#Signup_modal" data-bs-toggle="modal">Register</button>
                     </div>
                 </div>
@@ -817,7 +815,7 @@
             </div>
         </footer>
 
-        <!-- scroll to top -->
+        <!-- RightFloat-scroll to top -->
         <div class="RightFloat scroll-to-top MOBhide" id="scrollToTop">
             <a href="#" class="FloatBtn">
                 <img src="./assets/img/icon/png/top.png">
@@ -849,6 +847,46 @@
             </a>
         </div>
         
+        <!-- Login Modal -->
+        <div class="modal fade" id="Login_modal" aria-hidden="true" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close btn-close-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h1 class="modal-title text-center">Login</h1>
+                        <div>
+                            <div class="InputBox-title">*Phone number</div>
+                            <input type="text" class="input-content" placeholder="Phone number">
+                        </div>
+                        <div>
+                            <div class="InputBox-title">*Password</div>
+                            <div class="Password-input-wrapper">
+                                <input type="text" class="input-content" placeholder="Password" id="Password_input">
+                                <img src="./assets/img/icon/png/eye-off.png" class="eye-icon" id="eyeIcon" alt="eye-icon">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="InputBox-title InputBox-title-big">*Verification code</div>
+                            <div class="Verification-input-wrapper">
+                                <input type="text" class="input-content" placeholder="Verification code">
+                                <button class="btn btn-primary arrow-cycle-icon">
+                                    <img src="./assets/img/icon/png/arrow-cycle-white.png">
+                                </button>
+                            </div>
+                        </div>
+                        <div class="text-center mt-30">
+                            <button class="btn btn-primary" data-bs-toggle="modal">Sign up</button>
+                        </div>
+                        <div class="text-center mt-30">Don't have an account yet? 
+                            <a href="#" class="red-text" data-bs-target="#Signup_modal"data-bs-toggle="modal">Sign up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Signup Modal -->
         <div class="modal fade" id="Signup_modal" aria-hidden="true" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
