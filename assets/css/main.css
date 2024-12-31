@@ -16,6 +16,12 @@ hr {
     opacity: unset;
 }
 img {width: 100%;}
+.main{flex: 1;}
+.wrapper {
+    display: flex;
+    flex-direction: column; /* 讓子元素垂直排列 */
+    min-height: 100vh; /* 最小高度為視窗高度 */
+}
 .iconBtn{
     border: none;
     background: none;
@@ -59,6 +65,9 @@ header .iconBtn{
     padding: 0 3px;
     display: grid;
     align-items: center;
+}
+@media (max-width: 767px) {
+    header{height: 50px;}
 }
 /*--- Marquee ---*/
 .Marquee {
@@ -478,6 +487,7 @@ footer .Payment-icon .Payment-text{
 }
 .RecordMenu .nav-link{
     color: #fff;
+    margin: 10px 0;
 }
 .RecordMenu .nav-pills .nav-link.active{
     background: rgba(166, 95, 201, 1);
@@ -487,12 +497,66 @@ footer .Payment-icon .Payment-text{
     height: 24px;
     margin-right: 3px;
 }
+@media (max-width: 767px) {
+    .RecordMenu {
+        left: -250px;
+    }
+    .RecordMenu.active {
+        left: 0px;
+        padding: 10px;
+    }
+    .RecordMenu {
+        position: fixed;
+        top: 110px;
+        left: -250px;
+        width: 250px;
+        transition: left 0.3s ease;
+        z-index: 999;
+    }
+    .RecordMenu .nav-link{
+        padding: 8px 10px;
+    }
+    .show-RecordMenu-btn {
+        position: fixed;
+        top: 130px;
+        left: 0px;
+        z-index: 1000;
+        background: rgba(166, 95, 201, 1);
+        border: none;
+        width: 32px;
+        height: 40px;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+        transition: left 0.3s ease;   /* 過渡效果 */
+    }
+    .show-RecordMenu-btn {
+        display: flex;
+    }
+    .show-RecordMenu-btn img{
+        height: 16px;
+        width: 16px;
+    }
+    .RecordMenu.active .show-RecordMenu-btn{
+        left: 250px;
+    }
+}
 .RecordMenu-content .MemberBox{
     margin-top: 0;
 }
 .RecordMenu-content .MemberBox .container{
     background: linear-gradient(139.21deg, #A65FC9 -18.54%, #5D0DB1 122.12%);
     padding: 10px;
+}
+@media (max-width: 767px) {
+    .RecordMenu-content .MemberBox .container{
+        padding: 10px 5px;
+    }
+    .RecordMenu-content .MemberBox .iconBtn{
+        font-size: 10px;
+    }
 }
 .Txn-item .nav-link{
     background: #fff;
@@ -541,21 +605,25 @@ footer .Payment-icon .Payment-text{
     height: 40px;
     border-bottom: 1px solid rgba(211, 211, 211, 1)
 }
-
-.ResultTable th:first-child, 
-.ResultTable td:first-child {
-    width: 35%;
+.Txn-title {
+    display: none; /* 預設隱藏 */
+    font-size: 20px;
+    font-weight: 700;
 }
-.ResultTable th:not(:first-child), 
-.ResultTable td:not(:first-child) {
-    width: 21.6%;
+.Txn-title.active {
+    display: block; /* 只有帶有 .active 的內容顯示 */
 }
-.main{flex: 1;}
-.wrapper {
+.PageTitle{
     display: flex;
-    flex-direction: column; /* 讓子元素垂直排列 */
-    min-height: 100vh; /* 最小高度為視窗高度 */
+    align-items: center;
+    margin-bottom: 20px;
 }
+.PageTitle img{
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+
 
 
 
