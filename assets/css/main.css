@@ -152,11 +152,11 @@ header .iconBtn{
 }
 @media (max-width: 575px){
     .MemberBox .container{padding: 10px;}
-    .MemberDetail {gap: 5px;}
+    .MemberDetail {gap: 5px;padding-right: 0;}
     .MemberVIP{font-size: 12px;}
     .MemberName {font-size: 20px;line-height: 20px;}
     .MemberBal{font-size: 12px;line-height: 12px;}
-    .MemberAction{font-size: 12px;}
+    .MemberAction{font-size: 12px;padding-left: 0;}
 }
 /*--- MenuBox ---*/
 @media (min-width: 768px) {
@@ -556,6 +556,7 @@ footer .Payment-icon .Payment-text{
     }
     .RecordMenu-content .MemberBox .iconBtn{
         font-size: 10px;
+        padding: 3px;
     }
 }
 .Txn-item .nav-link{
@@ -569,12 +570,19 @@ footer .Payment-icon .Payment-text{
     background: linear-gradient(139.21deg, #A65FC9 -18.54%, #5D0DB1 122.12%);
     color: #fff;
 }
+@media (max-width: 767px) {
+    .Txn-item .nav-link{
+        margin: 0 3px;
+        padding: 6px 12px;
+    }
+}
 .TableRange{
     background: rgba(44, 24, 91, 1);
     padding: 16px;
     border-radius: 16px;
 }
-.TableRange .nav-link{background: #fff;
+.TableRange .nav-link{
+    background: #fff;
     border: 1px solid rgba(153, 153, 153, 1);
     color: rgba(153, 153, 153, 1);
     margin: 0 5px;
@@ -583,6 +591,11 @@ footer .Payment-icon .Payment-text{
 .TableRange .nav-link.active{
     background: linear-gradient(139.21deg, #A65FC9 -18.54%, #5D0DB1 122.12%);
     color: #fff;
+}
+@media (max-width: 767px) {
+    .TableRange .nav-link{
+        padding: 6px 12px;
+    }
 }
 .TableRange .nav {
     display: flex;
