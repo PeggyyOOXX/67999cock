@@ -605,6 +605,28 @@ footer .Payment-icon .Payment-text{
     height: 40px;
     border-bottom: 1px solid rgba(211, 211, 211, 1)
 }
+.ResultTable th:first-child, 
+.ResultTable td:first-child {
+    width: 35%;
+}
+.ResultTable th:not(:first-child), 
+.ResultTable td:not(:first-child) {
+    width: 21.6%;
+}
+@media (max-width: 767px) {
+    .ResultTable th:nth-child(1), 
+    .ResultTable td:nth-child(1) {
+        width: 25%;
+    }
+    .ResultTable th:nth-child(3), 
+    .ResultTable td:nth-child(3) {
+        width: 35%;
+    }
+    .ResultTable th:nth-child(4), 
+    .ResultTable td:nth-child(4) {
+        width: 20%;
+    }
+}
 .Txn-title {
     display: none; /* 預設隱藏 */
     font-size: 20px;
