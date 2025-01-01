@@ -484,6 +484,7 @@ footer .Payment-icon .Payment-text{
 .RecordMenu{
     background: rgba(44, 24, 91, 1);
     border-radius: 16px;
+    height: fit-content;
 }
 .RecordMenu .nav-link{
     color: #fff;
@@ -658,6 +659,111 @@ footer .Payment-icon .Payment-text{
     width: 24px;
     margin-right: 10px;
 }
+/*--- Wallet ---*/
+.Wallet-item .nav-link{
+    background: #fff;
+    border: 1px solid rgba(153, 153, 153, 1);
+    color: rgba(153, 153, 153, 1);
+    margin: 0 5px;
+    border-radius: 16px;
+}
+.Wallet-item .nav-link.active{
+    background: linear-gradient(139.21deg, #A65FC9 -18.54%, #5D0DB1 122.12%);
+    color: #fff;
+}
+@media (max-width: 767px) {
+    .Wallet-item .nav-link{
+        margin: 0 3px;
+        padding: 6px 12px;
+    }
+}
+.WalletWhole{
+    background: rgba(44, 24, 91, 1);
+    padding: 16px;
+    border-radius: 16px;
+}
+.Wallet-item-title{
+    color: rgba(255, 199, 0, 1);
+    font-size: 20px;
+    font-weight: 700;
+}
+.WalletBalanceBox{
+    background: rgba(44, 24, 91, 1);
+    border: 1px solid rgba(255, 199, 0, 1);
+    padding: 8px 24px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.WalletBalanceBox .Amount {
+    text-align: left;
+    flex: 1;   /* 撐滿剩餘空間 */
+}
+.WalletBalanceBox .Currency {
+    text-align: right;
+}
+.WalletActionBox .nav-link{
+    background: #fff;
+    border: 1px solid rgba(153, 153, 153, 1);
+    color: rgba(153, 153, 153, 1);
+    margin: 0 5px;
+    border-radius: 16px;
+    height: 60px;
+}
+.WalletActionBox .nav-link.active{
+    background: linear-gradient(139.21deg, #A65FC9 -18.54%, #5D0DB1 122.12%);
+    color: #fff;
+}
+@media (max-width: 767px) {
+    .WalletActionBox .nav-link{
+        margin: 0 3px;
+        padding: 6px 12px;
+    }
+}
+.WalletGametypeBox{
+    border: 1px solid rgba(255, 199, 0, 1);
+    border-radius: 8px;
+    padding: 8px;
+}
+.WalletGameBox{
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 8px 16px;
+    color: rgba(153, 153, 153, 1);
+    max-width: calc(25% - 10px);
+}
+@media (max-width: 767px) {
+    .WalletGameBox{
+        max-width: calc(50% - 10px);
+    }
+}
+.WalletGameBox-logo{
+    width: 48px;
+    height: 18px;
+}
+.WalletGameBox-balance{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.WalletGameBox-balance .Amount {
+    text-align: left;
+    flex: 1;
+    font-size: 20px;
+    font-weight: 700;
+}
+.WalletGameBox-balance .Refresh {
+    text-align: right;
+}
+.WalletGameBox-balance .Refresh img{
+    width: 16px;
+    height: 16px;
+}
+.Wallet-title {
+    font-size: 20px;
+    font-weight: 700;
+}
 
 
 
@@ -665,7 +771,7 @@ footer .Payment-icon .Payment-text{
 
 
 /*--- Margin ---*/
-.m-00{margin: 0;}
+.m-00 {margin: 0;}
 .mt-05 {margin-top: 5px;}
 .mt-10 {margin-top: 10px;}
 .mt-15 {margin-top: 15px;}
