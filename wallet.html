@@ -1,0 +1,474 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+        <meta name="format-detection" content="telephone=no">
+        <title>Wallet</title>
+
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/main.css?o">
+
+        <script type="text/javascript" src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="./assets/js/customize.js"></script>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- header--->
+            <header>
+                <div class="container">
+                    <div class="row">
+                        <div class="col text-start header-logo">
+                            LOGO
+                        </div>
+
+                        <div class="col text-end">  <!-- Logged in--->
+                            <button class="iconBtn">
+                                <img src="./assets/img/icon/png/mail.png">
+                                <span class="msg-amoint">99+</span>
+                            </button>
+                            <button class="iconBtn">
+                                <img src="./assets/img/icon/png/logout.png">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class="main container mt-20">
+                <div class="row">
+                    <div class="col-3 RecordMenu">
+                        <div class="nav flex-column nav-pills px-10" aria-orientation="vertical">
+                            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#BankManagement-tab" type="button">
+                                <img src="./assets/img/icon/png/bank.png">
+                                <span>Bank Management</span>
+                            </button>
+                            <button class="nav-link text-start active" data-bs-toggle="pill" data-bs-target="#Transactions-tab" type="button">
+                                <img src="./assets/img/icon/png/transactions.png">
+                                <span>Transactions</span>
+                            </button>
+                            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#TaskLog-tab" type="button">
+                                <img src="./assets/img/icon/png/book.png">
+                                <span>Task Log</span>
+                            </button>
+                            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#PointCollection-tab" type="button">
+                                <img src="./assets/img/icon/png/coin.png">
+                                <span>Point Collection</span>
+                            </button>
+                            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#HelpCenter-tab" type="button">
+                                <img src="./assets/img/icon/png/question.png">
+                                <span>Help Center</span>
+                            </button>
+                            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#AgencyCooperation-tab" type="button">
+                                <img src="./assets/img/icon/png/Handshake.png">
+                                <span>Agency Cooperation</span>
+                            </button>
+                            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#DownloadAPP-tab" type="button">
+                                <img src="./assets/img/icon/png/download.png">
+                                <span>Download APP</span>
+                            </button>
+                            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#Language-tab" type="button">
+                                <img src="./assets/img/icon/png/earth.png">
+                                <span>Language</span>
+                            </button>
+                            <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#ResetPassword-tab" type="button">
+                                <img src="./assets/img/icon/png/key.png">
+                                <span>Reset Password</span>
+                            </button>
+                            <button id="show_RecordMenu" class="show-RecordMenu-btn floating-btn PChide">
+                                <img src="./assets/img/icon/png/arrow-right-primary.png">
+                            </button>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-12 col-md-9">
+                        <div class="tab-content RecordMenu-content">
+                            <div class="tab-pane fade" id="BankManagement-tab">BankManagement</div>
+
+                            
+                            <div class="tab-pane fade show active" id="Transactions-tab">
+                                <div class="PageTitle PChide">
+                                    <img src="./assets/img/icon/png/arrow-left.png">
+                                    <div class="Wallet-title">Wallet</div>
+                                </div>
+                                <!-- MemberBox--->
+                                <div class="MemberBox">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col text-start MemberDetail">  <!-- Logged in--->
+                                                <img src="./assets/img/profilepicture.png" alt="profile" class="profilepicture">
+                                                <div class="MemberVIP">
+                                                    <svg width="21" height="18" viewBox="0 0 21 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M10.9893 3.42856C11.3415 3.22874 11.6178 2.91791 11.7748 2.54459C11.9318 2.17127 11.9608 1.75646 11.8573 1.36491C11.7538 0.973367 11.5235 0.627112 11.2025 0.380194C10.8815 0.133276 10.4877 -0.000410225 10.0827 9.45624e-07C9.67771 0.000412116 9.28424 0.134898 8.96371 0.382467C8.64319 0.630036 8.41364 0.976758 8.31091 1.36851C8.20818 1.76027 8.23803 2.17502 8.39582 2.54802C8.55361 2.92102 8.83045 3.23129 9.18313 3.4304L9.17396 3.4469C8.57344 4.70019 7.73914 6.49533 6.45101 7.16919C5.39299 7.72203 3.87474 7.44424 2.74705 7.23703C2.72896 6.98061 2.63936 6.73439 2.48842 6.52631C2.33748 6.31823 2.13124 6.15662 1.8931 6.05982C1.65496 5.96301 1.39446 5.9349 1.14115 5.97865C0.887839 6.02241 0.651863 6.13628 0.459996 6.30736C0.268129 6.47844 0.128052 6.69987 0.0556595 6.94653C-0.0167332 7.19318 -0.0185436 7.45519 0.0504337 7.70283C0.119411 7.95046 0.256415 8.17381 0.445899 8.34752C0.635384 8.52123 0.869764 8.63836 1.12245 8.68561L3.82523 15.6626C4.02567 16.1799 4.37783 16.6244 4.83547 16.9379C5.29312 17.2514 5.83486 17.4192 6.38958 17.4192H13.7792C14.3339 17.4192 14.8756 17.2514 15.3333 16.9379C15.7909 16.6244 16.1431 16.1799 16.3435 15.6626L19.0454 8.68561C19.2965 8.63888 19.5296 8.52315 19.7186 8.35139C19.9076 8.17964 20.0451 7.95863 20.1156 7.71315C20.186 7.46767 20.1868 7.20741 20.1177 6.96153C20.0486 6.71566 19.9124 6.49388 19.7243 6.32105C19.5363 6.14823 19.3038 6.03118 19.053 5.98303C18.8022 5.93488 18.5429 5.95752 18.3042 6.04843C18.0656 6.13933 17.8569 6.29491 17.7017 6.49772C17.5465 6.70053 17.4508 6.94256 17.4253 7.19669C16.2711 7.34614 14.7831 7.53683 13.7177 6.98033C12.4553 6.32021 11.609 4.64885 10.9893 3.42856Z" fill="#FFC700"/>
+                                                    </svg><br>
+                                                    <span>LV1</span>
+                                                </div>
+                                                <div>
+                                                    <span class="MemberName">usertest</span><br>
+                                                    <span class="MemberBal">$ 100,000,000</span>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col text-end MemberAction">  <!-- Logged in--->
+                                                <div>
+                                                    <button class="iconBtn">
+                                                        <img src="./assets/img/icon/png/paymeat.png" class="MemberAction-icon"><br>
+                                                        <span>Deposit</span>
+                                                    </button>
+                                                    <button class="iconBtn">
+                                                        <img src="./assets/img/icon/png/withdrawal.png" class="MemberAction-icon"><br>
+                                                        <span>Withdrawal</span>
+                                                    </button>
+                                                    <button class="iconBtn">
+                                                        <img src="./assets/img/icon/png/transactions.png" class="MemberAction-icon"><br>
+                                                        <span>Transfer</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="WalletBox">
+                                    <div class="Wallet-item">
+                                        <div class="nav nav-pills me-3">
+                                            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pill-DepositWallet" type="button">Deposit</button>
+                                            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#pill-WithdrawalWallet" type="button">Withdrawal</button>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content Txn-item-content">
+                                        <div class="tab-pane fade show active" id="pill-DepositWallet">
+                                            <div class="WalletWhole mt-10 mb-50 container">
+                                                <div class="Wallet-item-title">Wallet Balance</div>
+
+                                                <div class="WalletBalanceBox mt-10">
+                                                    <span class="Amount">100,000,000</span>
+                                                    <span class="Currency">(VND)</span>
+                                                </div>
+
+                                                <div class="WalletActionBox my-20 row">
+                                                    <button class="col nav-link active" type="button">Deposit</button>
+                                                    <button class="col nav-link " type="button">Withdrawal</button>
+                                                </div>
+
+                                                <div class="text-center"><h4>Transfer everything to the main account.</h4></div>
+
+                                                <div class="WalletGametypeBox mt-20 row">
+                                                    <div class="Wallet-item-title">Daga</div>
+                                                    <div class="WalletGameBox col-6 col-md-3 my-10">
+                                                        <img src="./assets/img/icon/game_logo/sv.png" class="WalletGameBox-logo">
+                                                        <div class="WalletGameBox-balance">
+                                                            <span class="Amount">9,999</span>
+                                                            <span class="Refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png" class="WalletGameBox-logo"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="WalletGametypeBox mt-20 row">
+                                                    <div class="Wallet-item-title">Slot</div>
+                                                    <div class="WalletGameBox col-6 col-md-3 my-10 mx-05">
+                                                        <img src="./assets/img/icon/game_logo/jdb.png" class="WalletGameBox-logo">
+                                                        <div class="WalletGameBox-balance">
+                                                            <span class="Amount">99,999</span>
+                                                            <span class="Refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png" class="WalletGameBox-logo"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="WalletGameBox col-6 col-md-3 my-10 mx-05">
+                                                        <img src="./assets/img/icon/game_logo/sb-B.png" class="WalletGameBox-logo">
+                                                        <div class="WalletGameBox-balance">
+                                                            <span class="Amount">99,999</span>
+                                                            <span class="Refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png" class="WalletGameBox-logo"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="WalletGameBox col-6 col-md-3 my-10 mx-05">
+                                                        <img src="./assets/img/icon/game_logo/fc.png" class="WalletGameBox-logo">
+                                                        <div class="WalletGameBox-balance">
+                                                            <span class="Amount">99,999</span>
+                                                            <span class="Refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png" class="WalletGameBox-logo"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="WalletGameBox col-6 col-md-3 my-10 mx-05">
+                                                        <img src="./assets/img/icon/game_logo/jili.png" class="WalletGameBox-logo">
+                                                        <div class="WalletGameBox-balance">
+                                                            <span class="Amount">99,999</span>
+                                                            <span class="Refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png" class="WalletGameBox-logo"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="WalletGametypeBox mt-20 row">
+                                                    <div class="Wallet-item-title">Casino</div>
+                                                    <div class="WalletGameBox col-6 col-md-3 my-10 mx-05">
+                                                        <img src="./assets/img/icon/game_logo/evo-B.png" class="WalletGameBox-logo">
+                                                        <div class="WalletGameBox-balance">
+                                                            <span class="Amount">99,999</span>
+                                                            <span class="Refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png" class="WalletGameBox-logo"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="WalletGameBox col-6 col-md-3 my-10 mx-05">
+                                                        <img src="./assets/img/icon/game_logo/ag.png" class="WalletGameBox-logo">
+                                                        <div class="WalletGameBox-balance">
+                                                            <span class="Amount">99,999</span>
+                                                            <span class="Refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png" class="WalletGameBox-logo"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="WalletGameBox col-6 col-md-3 my-10 mx-05">
+                                                        <img src="./assets/img/icon/game_logo/sa.png" class="WalletGameBox-logo">
+                                                        <div class="WalletGameBox-balance">
+                                                            <span class="Amount">99,999</span>
+                                                            <span class="Refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png" class="WalletGameBox-logo"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="WalletGameBox col-6 col-md-3 my-10 mx-05">
+                                                        <img src="./assets/img/icon/game_logo/we.png" class="WalletGameBox-logo">
+                                                        <div class="WalletGameBox-balance">
+                                                            <span class="Amount">99,999</span>
+                                                            <span class="Refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png" class="WalletGameBox-logo"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="WalletGametypeBox mt-20 row">
+                                                    <div class="Wallet-item-title">Poker</div>
+                                                    <div class="WalletGameBox col-6 col-md-3 my-10 mx-05">
+                                                        <img src="./assets/img/icon/game_logo/sp.png" class="WalletGameBox-logo">
+                                                        <div class="WalletGameBox-balance">
+                                                            <span class="Amount">999,999</span>
+                                                            <span class="Refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png" class="WalletGameBox-logo"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="WalletGameBox col-6 col-md-3 my-10 mx-05">
+                                                        <img src="./assets/img/icon/game_logo/jili.png" class="WalletGameBox-logo">
+                                                        <div class="WalletGameBox-balance">
+                                                            <span class="Amount">999,999</span>
+                                                            <span class="Refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png" class="WalletGameBox-logo"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="WalletGametypeBox mt-20 row">
+                                                    <div class="Wallet-item-title">Fishing</div>
+                                                    <div class="WalletGameBox col-6 col-md-3 my-10 mx-05">
+                                                        <img src="./assets/img/icon/game_logo/ag.png" class="WalletGameBox-logo">
+                                                        <div class="WalletGameBox-balance">
+                                                            <span class="Amount">99,999</span>
+                                                            <span class="Refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png" class="WalletGameBox-logo"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="WalletGametypeBox mt-20 row">
+                                                    <div class="Wallet-item-title">Esport</div>
+                                                    <div class="WalletGameBox col-6 col-md-3 my-10 mx-05">
+                                                        <img src="./assets/img/icon/game_logo/hg-B.png" class="WalletGameBox-logo">
+                                                        <div class="WalletGameBox-balance">
+                                                            <span class="Amount">999,999</span>
+                                                            <span class="Refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png" class="WalletGameBox-logo"></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="WalletGameBox col-6 col-md-3 my-10 mx-05">
+                                                        <img src="./assets/img/icon/game_logo/mg.png" class="WalletGameBox-logo">
+                                                        <div class="WalletGameBox-balance">
+                                                            <span class="Amount">999,999</span>
+                                                            <span class="Refresh"><img src="./assets/img/icon/png/arrow-cycle-gray.png" class="WalletGameBox-logo"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="tab-pane fade" id="TaskLog-tab">TaskLog</div>
+                            <div class="tab-pane fade" id="PointCollection-tab">PointCollection</div>
+                            <div class="tab-pane fade" id="HelpCenter-tab">HelpCenter</div>
+                            <div class="tab-pane fade" id="AgencyCooperation-tab">AgencyCooperation</div>
+                            <div class="tab-pane fade" id="DownloadAPP-tab">DownloadAPP</div>
+                            <div class="tab-pane fade" id="Language-tab">Language</div>
+                            <div class="tab-pane fade" id="ResetPassword-tab">ResetPassword</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- footer -->
+            <footer class="text-center">
+                <div class="Publisher-icon">
+                    <img src="./assets/img/icon/game_logo/sv.png">
+                    <img src="./assets/img/icon/game_logo/jili.png">
+                    <img src="./assets/img/icon/game_logo/fc.png">
+                    <img src="./assets/img/icon/game_logo/jdb.png">
+                    <img src="./assets/img/icon/game_logo/we.png">
+                    <img src="./assets/img/icon/game_logo/bng.png">
+                    <img src="./assets/img/icon/game_logo/mg.png">
+                    <img src="./assets/img/icon/game_logo/pp.png">
+                    <img src="./assets/img/icon/game_logo/hg.png">
+                    <img src="./assets/img/icon/game_logo/pg.png">
+                    <img src="./assets/img/icon/game_logo/ag.png">
+                    <img src="./assets/img/icon/game_logo/evo.png">
+                    <img src="./assets/img/icon/game_logo/sp.png">
+                    <img src="./assets/img/icon/game_logo/sa.png">
+                </div>
+                <hr>
+                <div class="Payment-icon my-20">
+                    <div class="Payment-text">Payment Methods</div><br>
+                    <img src="./assets/img/icon/png/pay/bankpay.png">
+                    <img src="./assets/img/icon/png/pay/momo.png">
+                    <img src="./assets/img/icon/png/pay/mastercard.png">
+                    <img src="./assets/img/icon/png/pay/visaelectron.png">
+                    <img src="./assets/img/icon/png/pay/usdt.png">
+                    <img src="./assets/img/icon/png/pay/paymaya.png">
+                </div>
+                <hr>
+                <div class="copyright-bar py-10">
+                    © 2024 START Copyrights. All Rights Reserved
+                </div>
+            </footer>
+
+            <!-- RightFloat-scroll to top -->
+            <div class="RightFloat scroll-to-top MOBhide" id="scrollToTop">
+                <a href="#" class="FloatBtn">
+                    <img src="./assets/img/icon/png/top.png">
+                    <span>top</span>
+                </a>
+            </div>
+
+            <!-- LeftFloat -->
+            <div class="LeftFloat">
+                <a href="#" class="FloatBtn">
+                    <img src="./assets/img/icon/png/home.png">
+                    <span>Home</span>
+                </a>
+                <a href="#" class="FloatBtn">
+                    <img src="./assets/img/icon/png/promotions.png">
+                    <span>Promotion</span>
+                </a>
+                <a href="#" class="FloatBtn">
+                    <img src="./assets/img/icon/png/wallet.png">
+                    <span>Wallet</span>
+                </a>
+                <a href="#" class="FloatBtn">
+                    <img src="./assets/img/icon/png/support.png">
+                    <span>Support</span>
+                </a>
+                <a href="#" class="FloatBtn">
+                    <img src="./assets/img/icon/png/user.png">
+                    <span>Account</span>
+                </a>
+            </div>
+            
+            <!-- Login Modal -->
+            <div class="modal fade" id="Login_modal" aria-hidden="true" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn-close btn-close-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h1 class="modal-title text-center">Login</h1>
+                            <div>
+                                <div class="InputBox-title">*Phone number</div>
+                                <input type="text" class="input-content" placeholder="Phone number">
+                            </div>
+                            <div>
+                                <div class="InputBox-title">*Password</div>
+                                <div class="Password-input-wrapper">
+                                    <input type="text" class="input-content" placeholder="Password" id="Password_input">
+                                    <img src="./assets/img/icon/png/eye-off.png" class="eye-icon" id="eyeIcon" alt="eye-icon">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="InputBox-title InputBox-title-big">*Verification code</div>
+                                <div class="Verification-input-wrapper">
+                                    <input type="text" class="input-content" placeholder="Verification code">
+                                    <button class="btn btn-primary arrow-cycle-icon">
+                                        <img src="./assets/img/icon/png/arrow-cycle-white.png">
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="text-center mt-30">
+                                <button class="btn btn-primary" data-bs-toggle="modal">Sign up</button>
+                            </div>
+                            <div class="text-center mt-30">Don't have an account yet? 
+                                <a href="#" class="red-text" data-bs-target="#Signup_modal"data-bs-toggle="modal">Sign up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Signup Modal -->
+            <div class="modal fade" id="Signup_modal" aria-hidden="true" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close btn-close-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h1 class="modal-title text-center">Sign up</h1>
+                        <div>
+                            <div class="InputBox-title">*Phone number</div>
+                            <input type="text" class="input-content" placeholder="Phone number">
+                        </div>
+                        <div>
+                            <div class="InputBox-title">*Password</div>
+                            <div>Daga123123 (the letter 'D' is in uppercase, without diacritics</div>
+                            <div class="Password-input-wrapper">
+                                <input type="text" class="input-content" placeholder="Password" id="Password_input">
+                                <img src="./assets/img/icon/png/eye-off.png" class="eye-icon" id="eyeIcon" alt="eye-icon">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="InputBox-title InputBox-title-big">*Verification code</div>
+                            <div class="Verification-input-wrapper">
+                                <input type="text" class="input-content" placeholder="Verification code">
+                                <button class="btn btn-primary arrow-cycle-icon">
+                                    <img src="./assets/img/icon/png/arrow-cycle-white.png">
+                                </button>
+                            </div>
+                            <label>
+                                <input type="radio" name="agree"> I agree to the 
+                                <a href="#" class="red-text">relevant terms</a> and <a href="#" class="red-text">privacy policy</a>
+                            </label>
+                        </div>
+                        <div class="text-center mt-30">
+                            <button class="btn btn-primary" data-bs-toggle="modal">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Register success Modal -->
+            <div class="modal fade" id="Registersuccess_modal" aria-hidden="true" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close btn-close-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="modal-title text-center">You have successfully registered!</div>
+                        <div class="text-center my-30">
+                            <button class="btn btn-primary" data-bs-toggle="modal">
+                                <img src="./assets/img/icon/png/arrow-cycle-white.png">
+                                Please refresh!
+                                <img src="./assets/img/icon/png/arrow-cycle-white.png">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </body>
+</html>
