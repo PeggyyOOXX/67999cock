@@ -764,6 +764,170 @@ footer .Payment-icon .Payment-text{
     font-size: 20px;
     font-weight: 700;
 }
+/*--- DepositMoney  ---*/
+.DepositMoney-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+.ProviderWhole{
+    background: rgba(44, 24, 91, 1);
+    padding: 16px;
+    border-radius: 16px;
+}
+.SelectProviderBox .nav-link{
+    background: #fff;
+    border: 1px solid rgba(153, 153, 153, 1);
+    color: rgba(153, 153, 153, 1);
+    margin: 0 5px;
+    border-radius: 16px;
+    height: 60px;
+}
+.SelectProviderBox .nav-link.active{
+    background: linear-gradient(139.21deg, #A65FC9 -18.54%, #5D0DB1 122.12%);
+    color: #fff;
+}
+.SelectProviderBox .nav-link.active.disable{
+    background: rgba(211, 211, 211, 1);
+    color: rgba(153, 153, 153, 1);
+}
+@media (max-width: 767px) {
+    .SelectProviderBox .nav-link{
+        margin: 0 3px;
+        padding: 6px 12px;
+    }
+}
+.SelectProvider-item-title{
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(153, 153, 153, 1);
+}
+.SelectProviderBox img{
+    width: 32px;
+    height: 32px;
+}
+input[type="radio"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid rgba(44, 24, 91, 1);
+    background-color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+input[type="radio"]:checked {
+    background-color: #fff;
+    border-color: rgba(44, 24, 91, 1);
+}
+input[type="radio"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(44, 24, 91, 1);
+}
+.SelectProvider-dropdown{
+    background: rgba(211, 211, 211, 1);
+    height: 60px;
+    max-width: calc(50% - 10px);
+    margin: 0 5px;
+}
+.SelectProviderBox .SelectProvider-dropdown .dropdown-text {
+    color: rgba(153, 153, 153, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.DepositAmountBox .inputBox{
+    display: flex; /* 使用 flexbox 布局 */
+    align-items: center; /* 讓 'đ' 和 input 在垂直方向上對齊 */
+    position: relative;
+}
+.DepositAmountBox .input-content{
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(153, 153, 153, 1);
+    padding: 8px;
+    padding-left: 30px;
+    margin: 0;
+}
+.DepositAmountBox .currency-symbol {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 199, 0, 1);
+}
+.DepositAmountNote{
+    font-size: 12px;
+    color: rgba(153, 153, 153, 1);
+}
+.DepositAmountBtn {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 10px;
+}
+.DepositAmountBtn .amount{
+    border-radius: 8px;
+    border: 1px solid rgba(153, 153, 153, 1);
+    color: rgba(153, 153, 153, 1);
+    height: 36px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+
+.DepositGame-input-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.DepositGame-input-wrapper .input-with-icon {
+    position: relative;
+    width: 100%;
+}
+
+.DepositGame-input-wrapper .input-content {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.DepositGame-input-wrapper span,
+.DepositGame-input-wrapper .money-icon {
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+    display: flex;
+    align-items: center;
+}
+.DepositGame-input-wrapper span {
+    margin-right: 10px;
+}
+.money-icon {
+    margin-right: 50px;
+    width: 20px;
+    height: 20px;
+}
+.DepositNextBtn{
+    width: 100%;
+    background: linear-gradient(224deg, #FFC700 0.84%, #FF9C00 99.16%);
+    color: #fff;
+    border-radius: 24px;
+    border: none;
+    height: 48px;
+}
+
+
+
 
 
 
