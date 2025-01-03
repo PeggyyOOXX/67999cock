@@ -518,6 +518,7 @@ footer .Payment-icon .Payment-text{
         padding: 8px 10px;
     }
     .show-RecordMenu-btn {
+        display: flex;
         position: fixed;
         top: 130px;
         left: 0px;
@@ -532,9 +533,7 @@ footer .Payment-icon .Payment-text{
         border-top-right-radius: 16px;
         border-bottom-right-radius: 16px;
         transition: left 0.3s ease;   /* 過渡效果 */
-    }
-    .show-RecordMenu-btn {
-        display: flex;
+        box-shadow: 0 0 10px #000;
     }
     .show-RecordMenu-btn img{
         height: 16px;
@@ -850,12 +849,12 @@ input[type="radio"]:checked::before {
     align-items: center;
     height: 100%;
 }
-.DepositAmountBox .inputBox{
-    display: flex; /* 使用 flexbox 布局 */
-    align-items: center; /* 讓 'đ' 和 input 在垂直方向上對齊 */
+.inputBox{
+    display: flex;
+    align-items: center; 
     position: relative;
 }
-.DepositAmountBox .input-content{
+.inputBox .input-content{
     border: none;
     border-radius: 0;
     border-bottom: 1px solid rgba(153, 153, 153, 1);
@@ -863,7 +862,7 @@ input[type="radio"]:checked::before {
     padding-left: 30px;
     margin: 0;
 }
-.DepositAmountBox .currency-symbol {
+.inputBox .currency-symbol {
     position: absolute;
     left: 10px;
     top: 50%;
@@ -890,25 +889,20 @@ input[type="radio"]:checked::before {
     justify-content: center;
     align-items: center; 
 }
-
-
 .DepositGame-input-wrapper {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     position: relative;
 }
-
 .DepositGame-input-wrapper .input-with-icon {
     position: relative;
     width: 100%;
 }
-
 .DepositGame-input-wrapper .input-content {
     width: 100%;
     padding-right: 40px;
 }
-
 .DepositGame-input-wrapper span,
 .DepositGame-input-wrapper .money-icon {
     position: absolute;
@@ -920,7 +914,7 @@ input[type="radio"]:checked::before {
 .DepositGame-input-wrapper span {
     margin-right: 10px;
 }
-.money-icon {
+.DepositGame-input-wrapper .money-icon {
     margin-right: 50px;
     width: 20px;
     height: 20px;
@@ -933,6 +927,133 @@ input[type="radio"]:checked::before {
     border: none;
     height: 48px;
 }
+
+/*--- Withdraw ---*/
+.WithdrawWhole{
+    background: rgba(44, 24, 91, 1);
+    padding: 16px;
+    border-radius: 16px;
+}
+.WithdrawStep {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.Step-container {
+    text-align: center;
+}
+.Step-num{
+    display: inline-block;
+    background: rgba(211, 211, 211, 1);
+    color: #fff;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    text-align: center;
+    align-content: center;
+}
+.Step-num.Step-num-on{
+    background: rgba(255, 199, 0, 1);
+    color: #000;
+}
+.WithdrawStep img{
+    width: 106px;
+    height: 6px;
+}
+.TotalBalanceBox{
+    border-bottom: 2px solid #fff;
+}
+.TotalBalance-title{
+    font-size: 28px;
+    font-weight: 700;
+}
+.TotalBalanceBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.money-icon {
+    margin-right: 8px;
+    height: 24px;
+    width: auto;
+    position: relative;
+}
+.BalanceAmount {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.WithdrawAmount-text{
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(255, 156, 0, 1);
+}
+.Withdraw-RangeBox {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.MinValue, .MaxValue {
+    font-size: 12px;
+    color: rgba(153, 153, 153, 1);
+}
+.WithdrawAmount-input-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.WithdrawAmount-input-wrapper .input-with-icon {
+    position: relative;
+    width: 100%;
+}
+.WithdrawAmount-input-wrapper .input-content {
+    width: 100%;
+    padding-right: 40px;
+}
+.WithdrawAmount-input-wrapper .input-content-amount {
+    position: absolute;
+    right: 10px;
+    bottom: 14px;
+    display: flex;
+    align-items: center;
+}
+.WithdrawAmount-input-wrapper span {
+    margin-right: 10px;
+}
+.Withdraw-AddBank {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.BankAccount-name{
+    color: rgba(153, 153, 153, 1);
+}
+.BankAccount-num{
+    color: #000;
+    font-size: 20px;
+}
+.ChooseBank-AddBank {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.ContactCS {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
 
 
 
@@ -1057,6 +1178,36 @@ button{
 .btn-secondary{
     background: linear-gradient(139.21deg, #A421E5 -18.54%, #6D04DD 122.12%);
     color: #fff;
+}
+.btn-BankAccount{
+    background: #fff;
+    height: 67px;
+    border-radius: 16px;
+    border: none;
+}
+.btn-BankAccount.disable{
+    background: rgba(211, 211, 211, 1);
+}
+.btn-AddBank{
+    background: none;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+.btn-AddBank img{
+    width: 24px;
+    height: 24px;
+}
+.btn-ContactCS{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    color: #fff;
+}
+.btn-ContactCS img{
+    width: 18px;
+    height: 20px;
 }
 
 
