@@ -796,6 +796,9 @@ footer .Payment-icon .Payment-text{
         padding: 6px 12px;
     }
 }
+.SelectProviderBox .SelectProviderBtn{
+    padding-right: 0;
+}
 .SelectProvider-item-title{
     font-size: 20px;
     font-weight: 700;
@@ -834,6 +837,11 @@ input[type="radio"]:checked::before {
     height: 60px;
     max-width: calc(50% - 10px);
     margin: 0 5px;
+}
+@media (max-width: 767px) {
+    .SelectProvider-dropdown{
+        max-width: calc(100% - 10px);
+    }
 }
 .SelectProviderBox .SelectProvider-dropdown .dropdown-text {
     color: rgba(153, 153, 153, 1);
